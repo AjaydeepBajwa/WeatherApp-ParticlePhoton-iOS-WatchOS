@@ -1,0 +1,767 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10FE388FD01AC763C80E5A8A /* Pods_ParticleWatchiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB873E5C53A7487FAB9E2E3 /* Pods_ParticleWatchiOS.framework */; };
+		D4CF2735236E9A2200698141 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CF2734236E9A2200698141 /* AppDelegate.swift */; };
+		D4CF2737236E9A2200698141 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CF2736236E9A2200698141 /* ViewController.swift */; };
+		D4CF273A236E9A2200698141 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4CF2738236E9A2200698141 /* Main.storyboard */; };
+		D4CF273C236E9A2400698141 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4CF273B236E9A2400698141 /* Assets.xcassets */; };
+		D4CF273F236E9A2400698141 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4CF273D236E9A2400698141 /* LaunchScreen.storyboard */; };
+		D4CF2744236E9A2400698141 /* ParticleWatchiOS WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D4CF2743236E9A2400698141 /* ParticleWatchiOS WatchKit App.app */; };
+		D4CF274A236E9A2400698141 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4CF2748236E9A2400698141 /* Interface.storyboard */; };
+		D4CF274C236E9A2500698141 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4CF274B236E9A2500698141 /* Assets.xcassets */; };
+		D4CF2753236E9A2500698141 /* ParticleWatchiOS WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D4CF2752236E9A2500698141 /* ParticleWatchiOS WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D4CF2758236E9A2500698141 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CF2757236E9A2500698141 /* InterfaceController.swift */; };
+		D4CF275A236E9A2500698141 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CF2759236E9A2500698141 /* ExtensionDelegate.swift */; };
+		D4CF275C236E9A2700698141 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4CF275B236E9A2700698141 /* Assets.xcassets */; };
+		E467D4C6E6145B6725DAF189 /* Pods_ParticleWatchiOS_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56AABE2B286A0508912156E /* Pods_ParticleWatchiOS_WatchKit_App.framework */; };
+		F908B0D1BACFCAD20E78DABD /* Pods_ParticleWatchiOS_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EF1910B096C6989373B8CF5 /* Pods_ParticleWatchiOS_WatchKit_Extension.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D4CF2745236E9A2400698141 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4CF2729236E9A2200698141 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4CF2742236E9A2400698141;
+			remoteInfo = "ParticleWatchiOS WatchKit App";
+		};
+		D4CF2754236E9A2500698141 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4CF2729236E9A2200698141 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4CF2751236E9A2500698141;
+			remoteInfo = "ParticleWatchiOS WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D4CF2763236E9A2700698141 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D4CF2753236E9A2500698141 /* ParticleWatchiOS WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4CF2767236E9A2700698141 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D4CF2744236E9A2400698141 /* ParticleWatchiOS WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1EF1910B096C6989373B8CF5 /* Pods_ParticleWatchiOS_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParticleWatchiOS_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		278866DFB63644EAF6496F88 /* Pods-ParticleWatchiOS WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParticleWatchiOS WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-ParticleWatchiOS WatchKit App/Pods-ParticleWatchiOS WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		5153A6879F2576D15BF9A887 /* Pods-ParticleWatchiOS WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParticleWatchiOS WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-ParticleWatchiOS WatchKit Extension/Pods-ParticleWatchiOS WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		8E1E6B6F3DC56541BB5E0B13 /* Pods-ParticleWatchiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParticleWatchiOS.debug.xcconfig"; path = "Target Support Files/Pods-ParticleWatchiOS/Pods-ParticleWatchiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		9188CDB6CD034784CF996A6D /* Pods-ParticleWatchiOS WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParticleWatchiOS WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-ParticleWatchiOS WatchKit App/Pods-ParticleWatchiOS WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		9FB1083066B8582E66DCFD22 /* Pods-ParticleWatchiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParticleWatchiOS.release.xcconfig"; path = "Target Support Files/Pods-ParticleWatchiOS/Pods-ParticleWatchiOS.release.xcconfig"; sourceTree = "<group>"; };
+		A56AABE2B286A0508912156E /* Pods_ParticleWatchiOS_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParticleWatchiOS_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACB873E5C53A7487FAB9E2E3 /* Pods_ParticleWatchiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParticleWatchiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFB2512A4771A74BE08254FC /* Pods-ParticleWatchiOS WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParticleWatchiOS WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-ParticleWatchiOS WatchKit Extension/Pods-ParticleWatchiOS WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		D4CF2731236E9A2200698141 /* ParticleWatchiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParticleWatchiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4CF2734236E9A2200698141 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D4CF2736236E9A2200698141 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D4CF2739236E9A2200698141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D4CF273B236E9A2400698141 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D4CF273E236E9A2400698141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D4CF2740236E9A2400698141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4CF2743236E9A2400698141 /* ParticleWatchiOS WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ParticleWatchiOS WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4CF2749236E9A2400698141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		D4CF274B236E9A2500698141 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D4CF274D236E9A2500698141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4CF2752236E9A2500698141 /* ParticleWatchiOS WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ParticleWatchiOS WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4CF2757236E9A2500698141 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		D4CF2759236E9A2500698141 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		D4CF275B236E9A2700698141 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D4CF275D236E9A2700698141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34BD99ABF740E6818235B7A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E467D4C6E6145B6725DAF189 /* Pods_ParticleWatchiOS_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4CF272E236E9A2200698141 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10FE388FD01AC763C80E5A8A /* Pods_ParticleWatchiOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4CF274F236E9A2500698141 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F908B0D1BACFCAD20E78DABD /* Pods_ParticleWatchiOS_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D4CF2728236E9A2200698141 = {
+			isa = PBXGroup;
+			children = (
+				D4CF2733236E9A2200698141 /* ParticleWatchiOS */,
+				D4CF2747236E9A2400698141 /* ParticleWatchiOS WatchKit App */,
+				D4CF2756236E9A2500698141 /* ParticleWatchiOS WatchKit Extension */,
+				D4CF2732236E9A2200698141 /* Products */,
+				F36511CACDB9A2B03FB33620 /* Pods */,
+				FE1FBF0974716ACCB974F50C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D4CF2732236E9A2200698141 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4CF2731236E9A2200698141 /* ParticleWatchiOS.app */,
+				D4CF2743236E9A2400698141 /* ParticleWatchiOS WatchKit App.app */,
+				D4CF2752236E9A2500698141 /* ParticleWatchiOS WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4CF2733236E9A2200698141 /* ParticleWatchiOS */ = {
+			isa = PBXGroup;
+			children = (
+				D4CF2734236E9A2200698141 /* AppDelegate.swift */,
+				D4CF2736236E9A2200698141 /* ViewController.swift */,
+				D4CF2738236E9A2200698141 /* Main.storyboard */,
+				D4CF273B236E9A2400698141 /* Assets.xcassets */,
+				D4CF273D236E9A2400698141 /* LaunchScreen.storyboard */,
+				D4CF2740236E9A2400698141 /* Info.plist */,
+			);
+			path = ParticleWatchiOS;
+			sourceTree = "<group>";
+		};
+		D4CF2747236E9A2400698141 /* ParticleWatchiOS WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				D4CF2748236E9A2400698141 /* Interface.storyboard */,
+				D4CF274B236E9A2500698141 /* Assets.xcassets */,
+				D4CF274D236E9A2500698141 /* Info.plist */,
+			);
+			path = "ParticleWatchiOS WatchKit App";
+			sourceTree = "<group>";
+		};
+		D4CF2756236E9A2500698141 /* ParticleWatchiOS WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D4CF2757236E9A2500698141 /* InterfaceController.swift */,
+				D4CF2759236E9A2500698141 /* ExtensionDelegate.swift */,
+				D4CF275B236E9A2700698141 /* Assets.xcassets */,
+				D4CF275D236E9A2700698141 /* Info.plist */,
+			);
+			path = "ParticleWatchiOS WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		F36511CACDB9A2B03FB33620 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E1E6B6F3DC56541BB5E0B13 /* Pods-ParticleWatchiOS.debug.xcconfig */,
+				9FB1083066B8582E66DCFD22 /* Pods-ParticleWatchiOS.release.xcconfig */,
+				9188CDB6CD034784CF996A6D /* Pods-ParticleWatchiOS WatchKit App.debug.xcconfig */,
+				278866DFB63644EAF6496F88 /* Pods-ParticleWatchiOS WatchKit App.release.xcconfig */,
+				5153A6879F2576D15BF9A887 /* Pods-ParticleWatchiOS WatchKit Extension.debug.xcconfig */,
+				CFB2512A4771A74BE08254FC /* Pods-ParticleWatchiOS WatchKit Extension.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FE1FBF0974716ACCB974F50C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACB873E5C53A7487FAB9E2E3 /* Pods_ParticleWatchiOS.framework */,
+				A56AABE2B286A0508912156E /* Pods_ParticleWatchiOS_WatchKit_App.framework */,
+				1EF1910B096C6989373B8CF5 /* Pods_ParticleWatchiOS_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D4CF2730236E9A2200698141 /* ParticleWatchiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4CF2768236E9A2700698141 /* Build configuration list for PBXNativeTarget "ParticleWatchiOS" */;
+			buildPhases = (
+				A9D96433D2C26BD8046A5A67 /* [CP] Check Pods Manifest.lock */,
+				D4CF272D236E9A2200698141 /* Sources */,
+				D4CF272E236E9A2200698141 /* Frameworks */,
+				D4CF272F236E9A2200698141 /* Resources */,
+				D4CF2767236E9A2700698141 /* Embed Watch Content */,
+				F710F705EC2B68C0ACAFA2EC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4CF2746236E9A2400698141 /* PBXTargetDependency */,
+			);
+			name = ParticleWatchiOS;
+			productName = ParticleWatchiOS;
+			productReference = D4CF2731236E9A2200698141 /* ParticleWatchiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D4CF2742236E9A2400698141 /* ParticleWatchiOS WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4CF2764236E9A2700698141 /* Build configuration list for PBXNativeTarget "ParticleWatchiOS WatchKit App" */;
+			buildPhases = (
+				0A504DF374AF9C48C9DBC570 /* [CP] Check Pods Manifest.lock */,
+				D4CF2741236E9A2400698141 /* Resources */,
+				D4CF2763236E9A2700698141 /* Embed App Extensions */,
+				34BD99ABF740E6818235B7A0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4CF2755236E9A2500698141 /* PBXTargetDependency */,
+			);
+			name = "ParticleWatchiOS WatchKit App";
+			productName = "ParticleWatchiOS WatchKit App";
+			productReference = D4CF2743236E9A2400698141 /* ParticleWatchiOS WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		D4CF2751236E9A2500698141 /* ParticleWatchiOS WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4CF2760236E9A2700698141 /* Build configuration list for PBXNativeTarget "ParticleWatchiOS WatchKit Extension" */;
+			buildPhases = (
+				6678D58B42F23E85B4337F5C /* [CP] Check Pods Manifest.lock */,
+				D4CF274E236E9A2500698141 /* Sources */,
+				D4CF274F236E9A2500698141 /* Frameworks */,
+				D4CF2750236E9A2500698141 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ParticleWatchiOS WatchKit Extension";
+			productName = "ParticleWatchiOS WatchKit Extension";
+			productReference = D4CF2752236E9A2500698141 /* ParticleWatchiOS WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D4CF2729236E9A2200698141 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = lambton;
+				TargetAttributes = {
+					D4CF2730236E9A2200698141 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					D4CF2742236E9A2400698141 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					D4CF2751236E9A2500698141 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = D4CF272C236E9A2200698141 /* Build configuration list for PBXProject "ParticleWatchiOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D4CF2728236E9A2200698141;
+			productRefGroup = D4CF2732236E9A2200698141 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4CF2730236E9A2200698141 /* ParticleWatchiOS */,
+				D4CF2742236E9A2400698141 /* ParticleWatchiOS WatchKit App */,
+				D4CF2751236E9A2500698141 /* ParticleWatchiOS WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D4CF272F236E9A2200698141 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4CF273F236E9A2400698141 /* LaunchScreen.storyboard in Resources */,
+				D4CF273C236E9A2400698141 /* Assets.xcassets in Resources */,
+				D4CF273A236E9A2200698141 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4CF2741236E9A2400698141 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4CF274C236E9A2500698141 /* Assets.xcassets in Resources */,
+				D4CF274A236E9A2400698141 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4CF2750236E9A2500698141 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4CF275C236E9A2700698141 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A504DF374AF9C48C9DBC570 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ParticleWatchiOS WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6678D58B42F23E85B4337F5C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ParticleWatchiOS WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9D96433D2C26BD8046A5A67 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ParticleWatchiOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F710F705EC2B68C0ACAFA2EC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ParticleWatchiOS/Pods-ParticleWatchiOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ParticleWatchiOS/Pods-ParticleWatchiOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ParticleWatchiOS/Pods-ParticleWatchiOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D4CF272D236E9A2200698141 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4CF2737236E9A2200698141 /* ViewController.swift in Sources */,
+				D4CF2735236E9A2200698141 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4CF274E236E9A2500698141 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4CF275A236E9A2500698141 /* ExtensionDelegate.swift in Sources */,
+				D4CF2758236E9A2500698141 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D4CF2746236E9A2400698141 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4CF2742236E9A2400698141 /* ParticleWatchiOS WatchKit App */;
+			targetProxy = D4CF2745236E9A2400698141 /* PBXContainerItemProxy */;
+		};
+		D4CF2755236E9A2500698141 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4CF2751236E9A2500698141 /* ParticleWatchiOS WatchKit Extension */;
+			targetProxy = D4CF2754236E9A2500698141 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D4CF2738236E9A2200698141 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4CF2739236E9A2200698141 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D4CF273D236E9A2400698141 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4CF273E236E9A2400698141 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D4CF2748236E9A2400698141 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4CF2749236E9A2400698141 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D4CF275E236E9A2700698141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D4CF275F236E9A2700698141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D4CF2761236E9A2700698141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5153A6879F2576D15BF9A887 /* Pods-ParticleWatchiOS WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NJXJRNPKAQ;
+				INFOPLIST_FILE = "ParticleWatchiOS WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lambton.ParticleWatchiOS.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		D4CF2762236E9A2700698141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFB2512A4771A74BE08254FC /* Pods-ParticleWatchiOS WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NJXJRNPKAQ;
+				INFOPLIST_FILE = "ParticleWatchiOS WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lambton.ParticleWatchiOS.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		D4CF2765236E9A2700698141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9188CDB6CD034784CF996A6D /* Pods-ParticleWatchiOS WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NJXJRNPKAQ;
+				IBSC_MODULE = ParticleWatchiOS_WatchKit_Extension;
+				INFOPLIST_FILE = "ParticleWatchiOS WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lambton.ParticleWatchiOS.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		D4CF2766236E9A2700698141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 278866DFB63644EAF6496F88 /* Pods-ParticleWatchiOS WatchKit App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NJXJRNPKAQ;
+				IBSC_MODULE = ParticleWatchiOS_WatchKit_Extension;
+				INFOPLIST_FILE = "ParticleWatchiOS WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lambton.ParticleWatchiOS.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		D4CF2769236E9A2700698141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E1E6B6F3DC56541BB5E0B13 /* Pods-ParticleWatchiOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NJXJRNPKAQ;
+				INFOPLIST_FILE = ParticleWatchiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lambton.ParticleWatchiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D4CF276A236E9A2700698141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FB1083066B8582E66DCFD22 /* Pods-ParticleWatchiOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NJXJRNPKAQ;
+				INFOPLIST_FILE = ParticleWatchiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lambton.ParticleWatchiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D4CF272C236E9A2200698141 /* Build configuration list for PBXProject "ParticleWatchiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4CF275E236E9A2700698141 /* Debug */,
+				D4CF275F236E9A2700698141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4CF2760236E9A2700698141 /* Build configuration list for PBXNativeTarget "ParticleWatchiOS WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4CF2761236E9A2700698141 /* Debug */,
+				D4CF2762236E9A2700698141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4CF2764236E9A2700698141 /* Build configuration list for PBXNativeTarget "ParticleWatchiOS WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4CF2765236E9A2700698141 /* Debug */,
+				D4CF2766236E9A2700698141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4CF2768236E9A2700698141 /* Build configuration list for PBXNativeTarget "ParticleWatchiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4CF2769236E9A2700698141 /* Debug */,
+				D4CF276A236E9A2700698141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D4CF2729236E9A2200698141 /* Project object */;
+}
