@@ -1,0 +1,6 @@
+framework module Pods_ParticleWatchiOS {
+  umbrella header "Pods-ParticleWatchiOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

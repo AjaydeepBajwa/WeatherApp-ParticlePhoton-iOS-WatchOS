@@ -7,6 +7,8 @@ target 'ParticleWatchiOS' do
 
   # Pods for ParticleWatchiOS
 pod 'Particle-SDK'
+   pod 'Alamofire', '~> 4.8.0'
+   pod 'SwiftyJSON', '~> 4.0'
 
 end
 
@@ -15,6 +17,8 @@ target 'ParticleWatchiOS WatchKit App' do
   use_frameworks!
 
   # Pods for ParticleWatchiOS WatchKit App
+   pod 'Alamofire', '~> 4.8.0'
+   pod 'SwiftyJSON', '~> 4.0'
 
 end
 
@@ -23,5 +27,7 @@ target 'ParticleWatchiOS WatchKit Extension' do
   use_frameworks!
 
   # Pods for ParticleWatchiOS WatchKit Extension
+   pod 'Alamofire', '~> 4.8.0'
+   pod 'SwiftyJSON', '~> 4.0'
 
 end

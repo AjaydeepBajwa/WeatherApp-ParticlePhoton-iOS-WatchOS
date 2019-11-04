@@ -1,0 +1,2265 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		016D4F6D0512E0659937DB5D9A7C5384 /* Alamofire-watchOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A36F7221375B6E3B31CF19C410C6818 /* Alamofire-watchOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01CAEC5F6F9431E4D251A35A36F6A9EE /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5CDF940D04E3BB5D9A5B5F31EF89AC /* TaskDelegate.swift */; };
+		0254EABA2D0AACFBFA5E2BAD753C5E2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C1859363F6A3524B69BDB0CB93ACAA9 /* Foundation.framework */; };
+		0281DB230A246653CBFC06716D26833C /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BF16C4C9E05177586406E18F6316F5 /* Request.swift */; };
+		05167D1AB7B31CA1CA134C72487EDD79 /* SwiftyJSON-watchOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BB62D975C3D25D8F1612B32A8219FC90 /* SwiftyJSON-watchOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09E2F57C3C2B897ACC8AF5C49F1E9592 /* UIImage+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B056B7081845CF13718860ABF475C83 /* UIImage+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09E785555B549DE5974C744DB8324B91 /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = CE7A0609A63AA99FDA50B26FA8387A0D /* UIRefreshControl+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A5DAD91FF4F6FB939E1B77C77010846 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5906A47A12CDE994068623A158170A4E /* Foundation.framework */; };
+		0BB60DCD0B9D12F9B9394238A76E09E4 /* ParticleCloud.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A0318FED4EC00059BDB2BFD19A27C95 /* ParticleCloud.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BD66FAA67A327E7DDD184F40EC99076 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8682E6A8558B2BF45C95F5FA950A77A8 /* ParameterEncoding.swift */; };
+		0D40EE6956924384435BBBD4B718DEC8 /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFB0CEE3F31528705509AB45735953A /* AFImageDownloader.m */; };
+		0F633FAFA12D5E78F47058900C6B879D /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50605BC812B30F3FBD3260A11D96BAB0 /* AFNetworking.framework */; };
+		0F7BDECDD56B33D440AE53E632594FA2 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED12641AB83C0A9E5F4E787EB64A049 /* ResponseSerialization.swift */; };
+		104CDF3CC5DC20EADBD3A20BA1AFBCEF /* ParticleSession.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D703B0DF55F080E63ABA76282BC192 /* ParticleSession.m */; };
+		104D4E8B5DAD2CC41922DDC83C354CB5 /* ParticleCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = B938AFA9ABE2BCBE9DB7C895EBF30175 /* ParticleCloud.m */; };
+		13D4ACAB3F0392D7263702403F4C4C77 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F604F1F9F1984CE2E5625E50EDC8A0 /* MultipartFormData.swift */; };
+		141D3443BD402A0DF35E470BFD65736A /* SwiftyJSON-watchOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2752454517106EABC01C50FB2A1BCE /* SwiftyJSON-watchOS-dummy.m */; };
+		169B3FC2BD33B8FBC2D4C35A1C1DC6BF /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 12747B9D59A33205B79E85DC386781AB /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17D6A066C5F987FEFF8B89D7EFDFD375 /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 1888364EFA921443BABCA5B16AA84C32 /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AC36159DEDD4452C304D5B1FFB688D1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0C6E4652C39F76C72E041D985F1F0F8 /* MobileCoreServices.framework */; };
+		2049792C7A71D906B216F6A9AB02BF8A /* ParticleSession.h in Headers */ = {isa = PBXBuildFile; fileRef = FBFDB985DE9CF1AB0640AA0F5BC8A783 /* ParticleSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		241B22C495B7AAF616CD0259F0954974 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C1859363F6A3524B69BDB0CB93ACAA9 /* Foundation.framework */; };
+		258E0D70108641D5AA3B17E4B0410144 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C1859363F6A3524B69BDB0CB93ACAA9 /* Foundation.framework */; };
+		2AE1F29F045D02727E815DBBAC8C7B4F /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2460D5C5F1EB493653C13F3366677E82 /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D772FF3E89306EEA24BE73F5B180F3C /* ParticleDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D72B914A441D0EB19B0F027DCFE2C80 /* ParticleDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F3A7727F25809D20B4D5115D64F545A /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2843A824E6387AFBEE5FE07D631D8AD4 /* Alamofire.swift */; };
+		3033C2DE9CB2085ECBB95717CFB6425A /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E4B9F88B787DC6F5200613BE77A066 /* AFAutoPurgingImageCache.m */; };
+		304B72B940E966DDD9F6B44EA9FC2CDC /* ParticlePricingInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 726D8DEAE5D91468B4C478EB7250A452 /* ParticlePricingInfo.m */; };
+		321ECBD5AFFD54101977B2D9E28E6ED6 /* ParticleEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F4C80687C33401BDD18D50278A4F25A /* ParticleEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34A7C5747B4C0825465453E196E57FAA /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F625BCC0BFD52BBC7DB9D2FF4823C4 /* UIButton+AFNetworking.m */; };
+		3A186F3A7711FAAB8C60562D63FF0D9F /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = BBA88870923A46A8ADCEE17FDD6EC563 /* UIProgressView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3AB990FDF4FCA4090651180F1325B815 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A2F09C4088FE104E4343F62806CFB4 /* SessionDelegate.swift */; };
+		3B464CF6B4AE8469ED16618437E8AB6A /* Pods-ParticleWatchiOS WatchKit App-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 696A4AC48C635E24267490FECD0E1E43 /* Pods-ParticleWatchiOS WatchKit App-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BDC8FBDB7922AA1ABA2C90DBA2DBB35 /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBAAB8804D2B6CD78FC13A850793CDD /* AFNetworking-dummy.m */; };
+		3E112DA53DD725C9A3185A54EB342EAF /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A25A996FD402253271E57F9954ACDAE /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3FE6D72A585EBF89011F4B35BC84DCEB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF412AA13E848E2058F484DFD4F965B /* SystemConfiguration.framework */; };
+		451FB27A7555760099E5B2C1AF2844C3 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E497CF3885B6DC1C460967B7BD619 /* SessionManager.swift */; };
+		456F5AB16DE22E601CA5EB4200088DD0 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78EE5EAC77ECDEB4C03C2548F0F50F0 /* AFError.swift */; };
+		45AD6149EEB2883EAC09063B5FDD6F5B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A49CC111BAC46C14E1DDDC279F0E4CAC /* CoreGraphics.framework */; };
+		47FF1D17418AB1144FDE0E46427F4877 /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = CDF6960A7AEB945737323927C28CE12E /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48D5B862DCFBFA49495393126DD0AE37 /* Pods-ParticleWatchiOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C1BF471F59CDAFDDAD08603C5EC46F /* Pods-ParticleWatchiOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		495FE1474EB2181D16F1D6BCAB1CF2C6 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952273F41E7D4EA9F9E9B64F24F112F1 /* Response.swift */; };
+		4B712538B8934F3BA2EABC87A7CEE903 /* SwiftyJSON-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ABF465E68BBB4122750D190F4F72F15 /* SwiftyJSON-iOS-dummy.m */; };
+		4C83C1F54714ACFB4B695E513A2BB1B3 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C009CC5153BC52A1F71796B8CA3135C /* Validation.swift */; };
+		4CE4A9C57F0DE9DF2CF65F63D68B6FEB /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2843A824E6387AFBEE5FE07D631D8AD4 /* Alamofire.swift */; };
+		5036C1D6D87D4DA731C972A410C17ABC /* AFNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2502A47847A3BCF87A6096E6426A004F /* AFNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52F6FF9AE7BB34610B8AB77C7D4B9C6F /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4A33308D463E02D48FF0D1818B1F /* SwiftyJSON.swift */; };
+		546323B71CA763DE815B4955EE3F2064 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB2B1910FEC1A600B8BAA3B6429E6CF /* Result.swift */; };
+		580F8BD46A01637419EB211D0E27556F /* Pods-ParticleWatchiOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D36847C3DCA1B1AEFA721A7B8C5C65 /* Pods-ParticleWatchiOS-dummy.m */; };
+		5DC223206D9E0964E6D1E700896661BC /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932C09C39FB259479A099F02CF89D632 /* ServerTrustPolicy.swift */; };
+		605919BE2A9B398425A1069C1E2645D2 /* Pods-ParticleWatchiOS WatchKit Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B3E42723E2C2C2C2298256C0243C9F5 /* Pods-ParticleWatchiOS WatchKit Extension-dummy.m */; };
+		635BD71893D73A48BC94ED76D768E640 /* ParticleLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = C0D60ADAA0A23EA24E2D2BCEC8A26B52 /* ParticleLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		670AB4D559C4E66CF0B60B27C0DE2646 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A40A52B37C7F6FD3888400A75AFBEF /* DispatchQueue+Alamofire.swift */; };
+		6820FC9C4AEE3F77DD0E587E4600A9E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C1859363F6A3524B69BDB0CB93ACAA9 /* Foundation.framework */; };
+		6CE5CC02EAA05D92F7592AD1E3F8FCE5 /* ParticleDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C01C6AF4658833552E93AE89C094726 /* ParticleDevice.m */; };
+		6E4C66ABA27A0F4EFDAA3E8B21A9384F /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D97A2A8C2FCD6D8FE1E090D48E5E6C20 /* AFNetworkActivityIndicatorManager.m */; };
+		6F6C4414DE96E08267712DA4C17C3CBB /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = A497EE66F6685495E03F7F4040D2D525 /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FDFC185A4DBAB58A58395606CBD743D /* ParticleNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = F7D91D026445707912C8CFAAC24B1C50 /* ParticleNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		722F9E517B17DC904ED3A33D2530C51F /* Particle-SDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 61C06622FB263753FDCA201EAC2C3D8F /* Particle-SDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74AA8AFA810877AFB1F782D5A423F823 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A1ADD174A0EF271FDE36B33B3A5BE4C /* Security.framework */; };
+		759DB228DFFB09E64A0EBA06E9CAF50A /* ParticleLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D0352932E63BB6225E1DBBB6AFD554 /* ParticleLogger.m */; };
+		769B6260247C5624A11411541C0AA4E2 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 76414C4D4C3EAFE131DB38F1166835AE /* AFSecurityPolicy.m */; };
+		77876997CA63145CC72A2D6FB5758513 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C109DB69D241ED7D7FF4E77CE89EDB /* AFHTTPSessionManager.m */; };
+		77F9726AF91222EEAF5630B72D53CD63 /* ParticleSimInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 38BA40B2233321FDDAB1543D591881F7 /* ParticleSimInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A404A7E2D885532CF33A86AEFE1BBF7 /* SwiftyJSON-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F48E9E03D04D7CACBCA79F5AD3236C9F /* SwiftyJSON-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F372985CE80B69B5524CC3277E1C1AF /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = B145B9600570FD875BF3875865928960 /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F80380D1072FBA5EA17D0037DFC4E39 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C1859363F6A3524B69BDB0CB93ACAA9 /* Foundation.framework */; };
+		82C72B35091073596FE61D069FFB8A80 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFE4D138BF63FB128DFE9911A12449B /* Timeline.swift */; };
+		84F66C3F5854092152611606892111E2 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4A33308D463E02D48FF0D1818B1F /* SwiftyJSON.swift */; };
+		856B571FA3AE9D65E81FACB19E3557F4 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C2B5FE88DB1811DEDC5BE871424D93C /* AFURLSessionManager.m */; };
+		870044029B3BA449A0932AAE3A495DE9 /* AFAutoPurgingImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 21B73D7268B2CD6FDEDAF639D107C864 /* AFAutoPurgingImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89F6A5F03290DFB6D82D4D65AFFBE59A /* EventSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 994D4CF05FD7FFCB40ADA3CB399F4C02 /* EventSource.m */; };
+		8F96E82F250EE718FA3F08AC9AB58423 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB6E09632FF4800D795155E4C98B586 /* UIActivityIndicatorView+AFNetworking.m */; };
+		912A476FD85EECC920A508E12460EFB8 /* Alamofire-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4847BB14279AE4F817F174B7FBADC4A2 /* Alamofire-iOS-dummy.m */; };
+		91D45871DE32A3C1B2E845F54E9A2660 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BF16C4C9E05177586406E18F6316F5 /* Request.swift */; };
+		95DAE5AD46A86973A77907D38716F694 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFBAF8E4702DBD9204E5EEE13FFB886 /* AFNetworkReachabilityManager.m */; };
+		96868A69D798815D76CCDA7B5F290BA2 /* ParticleSimInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D673E280B74FF1FE273D4BAA8D3EDB /* ParticleSimInfo.m */; };
+		9710AA8455D26EB1E65EC48EB73662E5 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5CDF940D04E3BB5D9A5B5F31EF89AC /* TaskDelegate.swift */; };
+		98114570DFFDF5BD81B7724B4810501D /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E958E22CE23D9EB56B5D6FA15C022BEE /* UIProgressView+AFNetworking.m */; };
+		98EB0914754838B056FC2410E28436A1 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C009CC5153BC52A1F71796B8CA3135C /* Validation.swift */; };
+		98F8EDE5E9F8B2235D6810942505EB86 /* EventSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 017F993848F94445B22BE3A3D0E2A51A /* EventSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A0D8180A8542BD19E2AEF533626FD32 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952273F41E7D4EA9F9E9B64F24F112F1 /* Response.swift */; };
+		9B19322761C64DE96140D9E99054171B /* Particle-SDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D987E8C881D0C859D5504775D2875A66 /* Particle-SDK-dummy.m */; };
+		9B41316D2DE09092FA0143B33A74B769 /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 17C309922058D9862337B8F9DF51B9DE /* UIKit+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0E1AFB4104DD8C24BA35979E670F51F /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843F2472F408E9A1E7B560F3C857D8F7 /* Notifications.swift */; };
+		A1D5DFBB770406755B92EDFA2F3BFF7F /* ParticlePricingInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = FD80A9C78A17FCC17BB6E4AE26BE2C2F /* ParticlePricingInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3007EA32DCAB1CA67795414671FF618 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E497CF3885B6DC1C460967B7BD619 /* SessionManager.swift */; };
+		A4CAA381B50248056BDFB9AFBD8867C9 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78EE5EAC77ECDEB4C03C2548F0F50F0 /* AFError.swift */; };
+		A510E0CAFFD738CD982D7FF14AA89CEA /* ParticleErrorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4252D8C05E3FFD9B099870F338F07B47 /* ParticleErrorHelper.m */; };
+		A5D86CC71480778ECD0EE81138D48C91 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0D68BEBF786D6DA71EA62A9FDBD95B /* AFURLResponseSerialization.m */; };
+		A6FAB3D0265464F0EED52EA3D31859AE /* ParticleEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8FF682C8946D449CB2937D6B52188D /* ParticleEvent.m */; };
+		A93BD560DD062BA5B515267570761CBE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A1ADD174A0EF271FDE36B33B3A5BE4C /* Security.framework */; };
+		A9E429ECAF059D9D471F3AE5C1BAC2B0 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E68B02CE43F8651107198F76C734681 /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AEA4CF8EE7E08C13B4A71A634F9F3B5B /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = EFD8779AD98FF49546853BDBAF724A37 /* UIButton+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AECB9FD1C271F734476CBF6E84BBFC51 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = B57E62BF63B5CB2C0F90B27284B73DA5 /* UIImageView+AFNetworking.m */; };
+		AFA9BCA194B0E1ABFDED55E02B3153F5 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE07A7C5BD051740A25B4E84860069 /* NetworkReachabilityManager.swift */; };
+		B19696C4C8DC8FF812636E6999B90584 /* Pods-ParticleWatchiOS WatchKit Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7496248ED48367A045B37DC0BDA61E8 /* Pods-ParticleWatchiOS WatchKit Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B26EDD2D9A9BC8CDDEADEA8DBEC606A7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF412AA13E848E2058F484DFD4F965B /* SystemConfiguration.framework */; };
+		B4475FE96A5EB06ABC96CEA377C62B0C /* Alamofire-watchOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B137F775091351A7B7F8316EE6E875E /* Alamofire-watchOS-dummy.m */; };
+		B5AD0B8F0F9304975A01978B2908B62F /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DE131569DA63EE2CE732B4AC764B711 /* UIActivityIndicatorView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C581285B8AB6D47A2BBC0F1FB0436437 /* Alamofire-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F113B67E6A1A193646A5D0D840FD18E6 /* Alamofire-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6B9E73B20C867D11C52F1FF43D1908B /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A2F09C4088FE104E4343F62806CFB4 /* SessionDelegate.swift */; };
+		C74FA9805B2F95DDA8237954DC1282C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5906A47A12CDE994068623A158170A4E /* Foundation.framework */; };
+		C7E530B3A0405BD8B338F9D3DB0978C8 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8682E6A8558B2BF45C95F5FA950A77A8 /* ParameterEncoding.swift */; };
+		D29F2AD07AF58334781F008905C30C35 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = A266FFB3C37A82FE998F728E45A129EF /* UIRefreshControl+AFNetworking.m */; };
+		D59E2A517A48D101120EB57F90F140A5 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 82C7C6231BFD3D46307587387CB413A5 /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB4C4DD65A02446CC0CC8BDBEAE89978 /* ParticleErrorHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = F232F02351D2E2CFE625071582124B9A /* ParticleErrorHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC2186197E507C0C73DFB0600D54867A /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C141D5F678D9E9E97FAB16D0F259CB5 /* UIWebView+AFNetworking.m */; };
+		E0CBC09AEC270F5E7430E684C6DE8440 /* KeychainHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 662D8796DFA7F2147AA7591CA8E723C9 /* KeychainHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0DF3A0ED5FAA2FE0C1E2396CBC4F968 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F604F1F9F1984CE2E5625E50EDC8A0 /* MultipartFormData.swift */; };
+		E17973BC9CEAE4ED0A7492450F95ACEF /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 49023865C82F4228668B96C858BF5DE2 /* AFURLRequestSerialization.m */; };
+		E261B82A0EEFE0EA897EA1A36C69C1CE /* AFImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 5464FCD870897F06C3E06DC75A8A6A28 /* AFImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2F9BFECBBEBDF515A49318C8AF36D74 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE07A7C5BD051740A25B4E84860069 /* NetworkReachabilityManager.swift */; };
+		E3B769692892DF0D48B50C51659B7B40 /* KeychainHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5A9CD361D31B60778C6C9CB4D722CB /* KeychainHelper.m */; };
+		E9478B9C29741BB15C26529B33AD798D /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED12641AB83C0A9E5F4E787EB64A049 /* ResponseSerialization.swift */; };
+		EA2DA37B7ED37959847875D89F6D3271 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFE4D138BF63FB128DFE9911A12449B /* Timeline.swift */; };
+		EC8F06D3F81B4F270179EC6C3F60156D /* Particle-SDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 27810A06B756DE922DAA1745445D9508 /* Particle-SDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE822282C912F20733663B0E9FAEAD6B /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932C09C39FB259479A099F02CF89D632 /* ServerTrustPolicy.swift */; };
+		F197A795CA0D500CCA5351183EDAF6BD /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB2B1910FEC1A600B8BAA3B6429E6CF /* Result.swift */; };
+		F2884C16786810D1B40F39DAFBCF4303 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843F2472F408E9A1E7B560F3C857D8F7 /* Notifications.swift */; };
+		F407B4E0B40A8AA4CA7443563F105E40 /* AFCompatibilityMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 859FB1FD9DECEDBFF7F0C695EBBA55E7 /* AFCompatibilityMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4FED6C37367BC46B92BB3FE18D233B8 /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 35F81622CD00F1157FEC4D9D2AAD8A0F /* UIWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F72CB570F3911A53EB6493B6D35831B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5906A47A12CDE994068623A158170A4E /* Foundation.framework */; };
+		F7F4B59F055FEEB2EFADEB6175A0FDB8 /* Pods-ParticleWatchiOS WatchKit App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E3C02963DE0366E9BA7A14A9278497 /* Pods-ParticleWatchiOS WatchKit App-dummy.m */; };
+		F8F36FE6018CA49838DA1345E3F1D62D /* ParticleNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = EC85E5C0646DBABBC3547A827E73643C /* ParticleNetwork.m */; };
+		FC6BB17D15EC8A4D2134D858B3A7F415 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5906A47A12CDE994068623A158170A4E /* Foundation.framework */; };
+		FF0835B3ECDED1DE76455DE10A228B58 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A40A52B37C7F6FD3888400A75AFBEF /* DispatchQueue+Alamofire.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04B180199E29AFB5952CDC155B376580 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0130B3724283586C0E9D2A112D4F2AA1;
+			remoteInfo = AFNetworking;
+		};
+		1D84DBC71DEEF8A36CB11F313ACEFCE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7737959F044655E11A16E572A933F46D;
+			remoteInfo = "SwiftyJSON-watchOS";
+		};
+		4DA3ED6EDA8C19402B5F466A4A22F739 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7737959F044655E11A16E572A933F46D;
+			remoteInfo = "SwiftyJSON-watchOS";
+		};
+		5279488AC6F9AF9B606230EBBD62792F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF0C6CD2E713DE257EF65C62E5F27D8A;
+			remoteInfo = "SwiftyJSON-iOS";
+		};
+		6FBB15A7E6045504C6327D089CECD251 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66F51BC925FD5FB829E8D422C690BDF0;
+			remoteInfo = "Alamofire-watchOS";
+		};
+		8557F1BAD5004599F49A3D5C2B8D3676 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66F51BC925FD5FB829E8D422C690BDF0;
+			remoteInfo = "Alamofire-watchOS";
+		};
+		D7A151445AE585A1043CE0716A781F5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0130B3724283586C0E9D2A112D4F2AA1;
+			remoteInfo = AFNetworking;
+		};
+		D83F4B971E2D6F9B5A347BF0DFFB81AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68AB791372E806C05E7AAFFFF40D6B7F;
+			remoteInfo = "Particle-SDK";
+		};
+		F1745042B4C272928F891D6F099C65BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD8828BFC368157226E204A32CD5B6DE;
+			remoteInfo = "Alamofire-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		017F993848F94445B22BE3A3D0E2A51A /* EventSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EventSource.h; path = ParticleSDK/Helpers/EventSource.h; sourceTree = "<group>"; };
+		02A40A52B37C7F6FD3888400A75AFBEF /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		08E2B6D2016AD6CB1039A1C22878D11C /* AFNetworking-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AFNetworking-Info.plist"; sourceTree = "<group>"; };
+		0ABF465E68BBB4122750D190F4F72F15 /* SwiftyJSON-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-iOS-dummy.m"; sourceTree = "<group>"; };
+		0BA463EDC284DCF74C6F374DF50CA763 /* Pods-ParticleWatchiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParticleWatchiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		0C5A9CD361D31B60778C6C9CB4D722CB /* KeychainHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KeychainHelper.m; path = ParticleSDK/Helpers/KeychainHelper.m; sourceTree = "<group>"; };
+		0DB79B28B39F1544A76C07703A91EBCE /* Pods_ParticleWatchiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParticleWatchiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12747B9D59A33205B79E85DC386781AB /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		17C109DB69D241ED7D7FF4E77CE89EDB /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		17C309922058D9862337B8F9DF51B9DE /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		17E3C02963DE0366E9BA7A14A9278497 /* Pods-ParticleWatchiOS WatchKit App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ParticleWatchiOS WatchKit App-dummy.m"; sourceTree = "<group>"; };
+		1888364EFA921443BABCA5B16AA84C32 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		192E4A33308D463E02D48FF0D1818B1F /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON/SwiftyJSON.swift; sourceTree = "<group>"; };
+		1B3E42723E2C2C2C2298256C0243C9F5 /* Pods-ParticleWatchiOS WatchKit Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ParticleWatchiOS WatchKit Extension-dummy.m"; sourceTree = "<group>"; };
+		1D781D96E7605625E047B96B95218B15 /* SwiftyJSON-watchOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SwiftyJSON-watchOS-prefix.pch"; path = "../SwiftyJSON-watchOS/SwiftyJSON-watchOS-prefix.pch"; sourceTree = "<group>"; };
+		1E51A5CDA3D9BF1757031E95F03B2DFC /* Alamofire-watchOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Alamofire-watchOS.xcconfig"; path = "../Alamofire-watchOS/Alamofire-watchOS.xcconfig"; sourceTree = "<group>"; };
+		1EED7293E2BED1523BF03EA772BDD92D /* Pods-ParticleWatchiOS WatchKit App-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ParticleWatchiOS WatchKit App-frameworks.sh"; sourceTree = "<group>"; };
+		20F625BCC0BFD52BBC7DB9D2FF4823C4 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		21B73D7268B2CD6FDEDAF639D107C864 /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFAutoPurgingImageCache.h; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.h"; sourceTree = "<group>"; };
+		22BF16C4C9E05177586406E18F6316F5 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		238E0B8A4E21F0ECC44A50479F47A3EF /* Pods-ParticleWatchiOS WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParticleWatchiOS WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		2394A6191F2DC30392CA555BB26BE570 /* Alamofire-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Alamofire-iOS.xcconfig"; sourceTree = "<group>"; };
+		2460D5C5F1EB493653C13F3366677E82 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
+		2502A47847A3BCF87A6096E6426A004F /* AFNetworking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-umbrella.h"; sourceTree = "<group>"; };
+		258784EF8731C6107A7ACC0583579DB1 /* SwiftyJSON-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftyJSON-iOS-Info.plist"; sourceTree = "<group>"; };
+		25E1C3A5B2E7CAA0010A861E974E3103 /* Pods-ParticleWatchiOS WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParticleWatchiOS WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		27810A06B756DE922DAA1745445D9508 /* Particle-SDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Particle-SDK-umbrella.h"; sourceTree = "<group>"; };
+		2843A824E6387AFBEE5FE07D631D8AD4 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		2C009CC5153BC52A1F71796B8CA3135C /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		2D3864AA9C8C195DC3118D391B9A5168 /* Pods-ParticleWatchiOS WatchKit Extension-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ParticleWatchiOS WatchKit Extension-frameworks.sh"; sourceTree = "<group>"; };
+		2FB2B1910FEC1A600B8BAA3B6429E6CF /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		32A40328E3C46640411C537857B0BCCD /* SwiftyJSON-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "SwiftyJSON-iOS.xcconfig"; sourceTree = "<group>"; };
+		33B1AB5C6926B92C6232D28E4DB9F652 /* Pods-ParticleWatchiOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ParticleWatchiOS-Info.plist"; sourceTree = "<group>"; };
+		345C40FED7EB916115507B61C29CD541 /* Alamofire-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Alamofire-iOS.modulemap"; sourceTree = "<group>"; };
+		35F81622CD00F1157FEC4D9D2AAD8A0F /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		368FEEE35084772DB01B7401045ADA7A /* Pods-ParticleWatchiOS WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParticleWatchiOS WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		38BA40B2233321FDDAB1543D591881F7 /* ParticleSimInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ParticleSimInfo.h; path = ParticleSDK/SDK/ParticleSimInfo.h; sourceTree = "<group>"; };
+		3B137F775091351A7B7F8316EE6E875E /* Alamofire-watchOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Alamofire-watchOS-dummy.m"; path = "../Alamofire-watchOS/Alamofire-watchOS-dummy.m"; sourceTree = "<group>"; };
+		3CFB0CEE3F31528705509AB45735953A /* AFImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageDownloader.m; path = "UIKit+AFNetworking/AFImageDownloader.m"; sourceTree = "<group>"; };
+		3DCE07A7C5BD051740A25B4E84860069 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		41CF18147DBEF048D9337F7278F0DD00 /* SwiftyJSON-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-iOS-prefix.pch"; sourceTree = "<group>"; };
+		4252D8C05E3FFD9B099870F338F07B47 /* ParticleErrorHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ParticleErrorHelper.m; path = ParticleSDK/Helpers/ParticleErrorHelper.m; sourceTree = "<group>"; };
+		43DA6DFAA898F949ACBD91D709EF13F8 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4847BB14279AE4F817F174B7FBADC4A2 /* Alamofire-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-iOS-dummy.m"; sourceTree = "<group>"; };
+		49023865C82F4228668B96C858BF5DE2 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		4A25A996FD402253271E57F9954ACDAE /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		50605BC812B30F3FBD3260A11D96BAB0 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		537FCF32D6E5F7461FEF5787028B14F6 /* Particle_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Particle_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5464FCD870897F06C3E06DC75A8A6A28 /* AFImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageDownloader.h; path = "UIKit+AFNetworking/AFImageDownloader.h"; sourceTree = "<group>"; };
+		5579A81348E0F6D9B15B2CC38439D56E /* Pods-ParticleWatchiOS WatchKit App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ParticleWatchiOS WatchKit App-acknowledgements.markdown"; sourceTree = "<group>"; };
+		55814121CC62DEBD4FAE8A8F36990098 /* SwiftyJSON-watchOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "SwiftyJSON-watchOS-Info.plist"; path = "../SwiftyJSON-watchOS/SwiftyJSON-watchOS-Info.plist"; sourceTree = "<group>"; };
+		55D673E280B74FF1FE273D4BAA8D3EDB /* ParticleSimInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ParticleSimInfo.m; path = ParticleSDK/SDK/ParticleSimInfo.m; sourceTree = "<group>"; };
+		5906A47A12CDE994068623A158170A4E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		59700E8364ECA3F6B921DEDCED24203D /* Alamofire-watchOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Alamofire-watchOS-Info.plist"; path = "../Alamofire-watchOS/Alamofire-watchOS-Info.plist"; sourceTree = "<group>"; };
+		5AE4C8F18F2BF1E105EA3FE1EF093A60 /* Pods_ParticleWatchiOS_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParticleWatchiOS_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B056B7081845CF13718860ABF475C83 /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+AFNetworking.h"; path = "UIKit+AFNetworking/UIImage+AFNetworking.h"; sourceTree = "<group>"; };
+		5B8FF682C8946D449CB2937D6B52188D /* ParticleEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ParticleEvent.m; path = ParticleSDK/SDK/ParticleEvent.m; sourceTree = "<group>"; };
+		5C1859363F6A3524B69BDB0CB93ACAA9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5CFBAF8E4702DBD9204E5EEE13FFB886 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		5DE131569DA63EE2CE732B4AC764B711 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		5F4C80687C33401BDD18D50278A4F25A /* ParticleEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ParticleEvent.h; path = ParticleSDK/SDK/ParticleEvent.h; sourceTree = "<group>"; };
+		61C06622FB263753FDCA201EAC2C3D8F /* Particle-SDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Particle-SDK.h"; path = "ParticleSDK/Particle-SDK.h"; sourceTree = "<group>"; };
+		62560E56C8695D5C3AF82D59C932663B /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
+		62D11D82F8C98B51422BC5C80CC185EF /* Particle-SDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Particle-SDK.xcconfig"; sourceTree = "<group>"; };
+		662D8796DFA7F2147AA7591CA8E723C9 /* KeychainHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KeychainHelper.h; path = ParticleSDK/Helpers/KeychainHelper.h; sourceTree = "<group>"; };
+		68F604F1F9F1984CE2E5625E50EDC8A0 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		696A4AC48C635E24267490FECD0E1E43 /* Pods-ParticleWatchiOS WatchKit App-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ParticleWatchiOS WatchKit App-umbrella.h"; sourceTree = "<group>"; };
+		6A0318FED4EC00059BDB2BFD19A27C95 /* ParticleCloud.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ParticleCloud.h; path = ParticleSDK/SDK/ParticleCloud.h; sourceTree = "<group>"; };
+		6C01C6AF4658833552E93AE89C094726 /* ParticleDevice.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ParticleDevice.m; path = ParticleSDK/SDK/ParticleDevice.m; sourceTree = "<group>"; };
+		6C141D5F678D9E9E97FAB16D0F259CB5 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		6D03487E7401DFA02AC3CEA95814DA0C /* Alamofire-watchOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "Alamofire-watchOS.modulemap"; path = "../Alamofire-watchOS/Alamofire-watchOS.modulemap"; sourceTree = "<group>"; };
+		6E68B02CE43F8651107198F76C734681 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		6EB1944859F875B258914AC6FF5D1811 /* AFNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AFNetworking.modulemap; sourceTree = "<group>"; };
+		6F348CF3DF73CCBE882148B54AFDFDD5 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F5064308B4AF8C34953981439629DAE /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
+		726D8DEAE5D91468B4C478EB7250A452 /* ParticlePricingInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ParticlePricingInfo.m; path = ParticleSDK/SDK/ParticlePricingInfo.m; sourceTree = "<group>"; };
+		73B2AAC02AD19BF39FA92020D26BF0F5 /* Pods-ParticleWatchiOS WatchKit Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ParticleWatchiOS WatchKit Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		749D4F911D9251D5E6D1603C57F820D9 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76414C4D4C3EAFE131DB38F1166835AE /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		7641B8993549E9BAB7067D272594511D /* Alamofire-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-iOS-prefix.pch"; sourceTree = "<group>"; };
+		7A1ADD174A0EF271FDE36B33B3A5BE4C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		7A36F7221375B6E3B31CF19C410C6818 /* Alamofire-watchOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Alamofire-watchOS-umbrella.h"; path = "../Alamofire-watchOS/Alamofire-watchOS-umbrella.h"; sourceTree = "<group>"; };
+		7D72B914A441D0EB19B0F027DCFE2C80 /* ParticleDevice.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ParticleDevice.h; path = ParticleSDK/SDK/ParticleDevice.h; sourceTree = "<group>"; };
+		7DB9ADFAF383ECFA9FAD22A3051AC884 /* Pods-ParticleWatchiOS WatchKit Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ParticleWatchiOS WatchKit Extension.modulemap"; sourceTree = "<group>"; };
+		7F0D68BEBF786D6DA71EA62A9FDBD95B /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		81B5B778D9797BE0BA76C4F58E988BFC /* SwiftyJSON-watchOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "SwiftyJSON-watchOS.xcconfig"; path = "../SwiftyJSON-watchOS/SwiftyJSON-watchOS.xcconfig"; sourceTree = "<group>"; };
+		82C7C6231BFD3D46307587387CB413A5 /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
+		843F2472F408E9A1E7B560F3C857D8F7 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		859FB1FD9DECEDBFF7F0C695EBBA55E7 /* AFCompatibilityMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFCompatibilityMacros.h; path = AFNetworking/AFCompatibilityMacros.h; sourceTree = "<group>"; };
+		85D36847C3DCA1B1AEFA721A7B8C5C65 /* Pods-ParticleWatchiOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ParticleWatchiOS-dummy.m"; sourceTree = "<group>"; };
+		8682E6A8558B2BF45C95F5FA950A77A8 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		87A2F09C4088FE104E4343F62806CFB4 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		89D3FBEBD89B50B2CEFDA03FD2C954D9 /* Pods_ParticleWatchiOS_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParticleWatchiOS_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ED12641AB83C0A9E5F4E787EB64A049 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		932C09C39FB259479A099F02CF89D632 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		952273F41E7D4EA9F9E9B64F24F112F1 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		95E4B9F88B787DC6F5200613BE77A066 /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAutoPurgingImageCache.m; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.m"; sourceTree = "<group>"; };
+		95E6EF39377052B9E782E47D56748F93 /* Particle-SDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Particle-SDK.modulemap"; sourceTree = "<group>"; };
+		966AA42878212207687E9A2A4DBCD618 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		994D4CF05FD7FFCB40ADA3CB399F4C02 /* EventSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EventSource.m; path = ParticleSDK/Helpers/EventSource.m; sourceTree = "<group>"; };
+		9C2B5FE88DB1811DEDC5BE871424D93C /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
+		9CBAAB8804D2B6CD78FC13A850793CDD /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A266FFB3C37A82FE998F728E45A129EF /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		A2B8ACC110C31C879BD0CE243B793E08 /* Pods-ParticleWatchiOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ParticleWatchiOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		A45A6B33A5AD177CEC9AB364012F8115 /* Pods-ParticleWatchiOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ParticleWatchiOS.modulemap"; sourceTree = "<group>"; };
+		A497EE66F6685495E03F7F4040D2D525 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		A49CC111BAC46C14E1DDDC279F0E4CAC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		A4FA15D44DF6BAC7550EDEED10862AA3 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A78EE5EAC77ECDEB4C03C2548F0F50F0 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		A7D703B0DF55F080E63ABA76282BC192 /* ParticleSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ParticleSession.m; path = ParticleSDK/SDK/ParticleSession.m; sourceTree = "<group>"; };
+		A8C1BF471F59CDAFDDAD08603C5EC46F /* Pods-ParticleWatchiOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ParticleWatchiOS-umbrella.h"; sourceTree = "<group>"; };
+		AB5CDF940D04E3BB5D9A5B5F31EF89AC /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		ABF412AA13E848E2058F484DFD4F965B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		AC50A0FF33792CD1C5DC43ECA4AC45CC /* Pods-ParticleWatchiOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ParticleWatchiOS-frameworks.sh"; sourceTree = "<group>"; };
+		B145B9600570FD875BF3875865928960 /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		B45E497CF3885B6DC1C460967B7BD619 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		B57E62BF63B5CB2C0F90B27284B73DA5 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		B938AFA9ABE2BCBE9DB7C895EBF30175 /* ParticleCloud.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ParticleCloud.m; path = ParticleSDK/SDK/ParticleCloud.m; sourceTree = "<group>"; };
+		BB62D975C3D25D8F1612B32A8219FC90 /* SwiftyJSON-watchOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SwiftyJSON-watchOS-umbrella.h"; path = "../SwiftyJSON-watchOS/SwiftyJSON-watchOS-umbrella.h"; sourceTree = "<group>"; };
+		BBA88870923A46A8ADCEE17FDD6EC563 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		BCB6E09632FF4800D795155E4C98B586 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		BF2752454517106EABC01C50FB2A1BCE /* SwiftyJSON-watchOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SwiftyJSON-watchOS-dummy.m"; path = "../SwiftyJSON-watchOS/SwiftyJSON-watchOS-dummy.m"; sourceTree = "<group>"; };
+		C0D60ADAA0A23EA24E2D2BCEC8A26B52 /* ParticleLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ParticleLogger.h; path = ParticleSDK/Helpers/ParticleLogger.h; sourceTree = "<group>"; };
+		C41E8612BACF77E4E6952F7997592069 /* Alamofire-watchOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Alamofire-watchOS-prefix.pch"; path = "../Alamofire-watchOS/Alamofire-watchOS-prefix.pch"; sourceTree = "<group>"; };
+		C56BBF89F2C6819597ABDE7593CF39B9 /* SwiftyJSON-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "SwiftyJSON-iOS.modulemap"; sourceTree = "<group>"; };
+		C7270CF429EFFD5C32E2643F103E5D67 /* Pods-ParticleWatchiOS WatchKit App-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ParticleWatchiOS WatchKit App-Info.plist"; sourceTree = "<group>"; };
+		CB1F46B5D906B55D116EA6D7FCBD7D4D /* Alamofire-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-iOS-Info.plist"; sourceTree = "<group>"; };
+		CDF6960A7AEB945737323927C28CE12E /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		CE53360B2891E81267942C693DEC134D /* SwiftyJSON-watchOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "SwiftyJSON-watchOS.modulemap"; path = "../SwiftyJSON-watchOS/SwiftyJSON-watchOS.modulemap"; sourceTree = "<group>"; };
+		CE7A0609A63AA99FDA50B26FA8387A0D /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		D0C6E4652C39F76C72E041D985F1F0F8 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		D32B106E7BBD4ED9751E1A6944392B14 /* Pods-ParticleWatchiOS WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParticleWatchiOS WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		D50EAF5D7548BD58FFB28B9FC625AD6D /* Particle-SDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Particle-SDK-prefix.pch"; sourceTree = "<group>"; };
+		D5AA15CD095581A843375E3374C9FB2E /* Pods-ParticleWatchiOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ParticleWatchiOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D97A2A8C2FCD6D8FE1E090D48E5E6C20 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
+		D987E8C881D0C859D5504775D2875A66 /* Particle-SDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Particle-SDK-dummy.m"; sourceTree = "<group>"; };
+		DE2DBAA7FBC115493CB60CE5C5F1BD54 /* Pods-ParticleWatchiOS WatchKit Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ParticleWatchiOS WatchKit Extension-acknowledgements.plist"; sourceTree = "<group>"; };
+		E7D0352932E63BB6225E1DBBB6AFD554 /* ParticleLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ParticleLogger.m; path = ParticleSDK/Helpers/ParticleLogger.m; sourceTree = "<group>"; };
+		E958E22CE23D9EB56B5D6FA15C022BEE /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		EC85E5C0646DBABBC3547A827E73643C /* ParticleNetwork.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ParticleNetwork.m; path = ParticleSDK/SDK/ParticleNetwork.m; sourceTree = "<group>"; };
+		EFD8779AD98FF49546853BDBAF724A37 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		F113B67E6A1A193646A5D0D840FD18E6 /* Alamofire-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-iOS-umbrella.h"; sourceTree = "<group>"; };
+		F232F02351D2E2CFE625071582124B9A /* ParticleErrorHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ParticleErrorHelper.h; path = ParticleSDK/Helpers/ParticleErrorHelper.h; sourceTree = "<group>"; };
+		F2633A0FEE505AFA973E417EF1ED6B02 /* Pods-ParticleWatchiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParticleWatchiOS.release.xcconfig"; sourceTree = "<group>"; };
+		F48E9E03D04D7CACBCA79F5AD3236C9F /* SwiftyJSON-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-iOS-umbrella.h"; sourceTree = "<group>"; };
+		F7496248ED48367A045B37DC0BDA61E8 /* Pods-ParticleWatchiOS WatchKit Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ParticleWatchiOS WatchKit Extension-umbrella.h"; sourceTree = "<group>"; };
+		F7AA32340DE197C8E954D3C4703C2EA4 /* Particle-SDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Particle-SDK-Info.plist"; sourceTree = "<group>"; };
+		F7D91D026445707912C8CFAAC24B1C50 /* ParticleNetwork.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ParticleNetwork.h; path = ParticleSDK/SDK/ParticleNetwork.h; sourceTree = "<group>"; };
+		FA81E787392DA7C12F00C99F2F0A3488 /* Pods-ParticleWatchiOS WatchKit Extension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ParticleWatchiOS WatchKit Extension-Info.plist"; sourceTree = "<group>"; };
+		FBFDB985DE9CF1AB0640AA0F5BC8A783 /* ParticleSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ParticleSession.h; path = ParticleSDK/SDK/ParticleSession.h; sourceTree = "<group>"; };
+		FBFE4D138BF63FB128DFE9911A12449B /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		FCBD8DBAF1C2CE70AF699D4D632F81C4 /* Pods-ParticleWatchiOS WatchKit App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ParticleWatchiOS WatchKit App-acknowledgements.plist"; sourceTree = "<group>"; };
+		FD80A9C78A17FCC17BB6E4AE26BE2C2F /* ParticlePricingInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ParticlePricingInfo.h; path = ParticleSDK/SDK/ParticlePricingInfo.h; sourceTree = "<group>"; };
+		FFB92BBACCB6B844514D45F83C552B0A /* Pods-ParticleWatchiOS WatchKit App.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ParticleWatchiOS WatchKit App.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0794D38A72DDD467A79DC8B8C9C82A46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				241B22C495B7AAF616CD0259F0954974 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		152219B0468DDEDC15A7E8759DF2FB2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC6BB17D15EC8A4D2134D858B3A7F415 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C8A0B6DAC49A082E1D38F68D01A03E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A5DAD91FF4F6FB939E1B77C77010846 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51C49E6511B1FE5314E69AD783B2DF18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6820FC9C4AEE3F77DD0E587E4600A9E9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99296CB2AAE82C49C9B4A74A8F4D8341 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45AD6149EEB2883EAC09063B5FDD6F5B /* CoreGraphics.framework in Frameworks */,
+				0254EABA2D0AACFBFA5E2BAD753C5E2D /* Foundation.framework in Frameworks */,
+				1AC36159DEDD4452C304D5B1FFB688D1 /* MobileCoreServices.framework in Frameworks */,
+				A93BD560DD062BA5B515267570761CBE /* Security.framework in Frameworks */,
+				B26EDD2D9A9BC8CDDEADEA8DBEC606A7 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9978DEEE05AAA072065CBB1BB52F6171 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F80380D1072FBA5EA17D0037DFC4E39 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C19B169F97D8E789A3AE6A0E82F53983 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F633FAFA12D5E78F47058900C6B879D /* AFNetworking.framework in Frameworks */,
+				258E0D70108641D5AA3B17E4B0410144 /* Foundation.framework in Frameworks */,
+				74AA8AFA810877AFB1F782D5A423F823 /* Security.framework in Frameworks */,
+				3FE6D72A585EBF89011F4B35BC84DCEB /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0BB2D1C546CE0D456044A0AC5F1C976 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C74FA9805B2F95DDA8237954DC1282C5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F811CEE0E918BDF873BBD036A36E60C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F72CB570F3911A53EB6493B6D35831B9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06344CA664601545636F584AE8D2E7CE /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				4A25A996FD402253271E57F9954ACDAE /* AFSecurityPolicy.h */,
+				76414C4D4C3EAFE131DB38F1166835AE /* AFSecurityPolicy.m */,
+			);
+			name = Security;
+			sourceTree = "<group>";
+		};
+		1310550C39AFCD052B8F2E420E95091B /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				A78EE5EAC77ECDEB4C03C2548F0F50F0 /* AFError.swift */,
+				2843A824E6387AFBEE5FE07D631D8AD4 /* Alamofire.swift */,
+				02A40A52B37C7F6FD3888400A75AFBEF /* DispatchQueue+Alamofire.swift */,
+				68F604F1F9F1984CE2E5625E50EDC8A0 /* MultipartFormData.swift */,
+				3DCE07A7C5BD051740A25B4E84860069 /* NetworkReachabilityManager.swift */,
+				843F2472F408E9A1E7B560F3C857D8F7 /* Notifications.swift */,
+				8682E6A8558B2BF45C95F5FA950A77A8 /* ParameterEncoding.swift */,
+				22BF16C4C9E05177586406E18F6316F5 /* Request.swift */,
+				952273F41E7D4EA9F9E9B64F24F112F1 /* Response.swift */,
+				8ED12641AB83C0A9E5F4E787EB64A049 /* ResponseSerialization.swift */,
+				2FB2B1910FEC1A600B8BAA3B6429E6CF /* Result.swift */,
+				932C09C39FB259479A099F02CF89D632 /* ServerTrustPolicy.swift */,
+				87A2F09C4088FE104E4343F62806CFB4 /* SessionDelegate.swift */,
+				B45E497CF3885B6DC1C460967B7BD619 /* SessionManager.swift */,
+				AB5CDF940D04E3BB5D9A5B5F31EF89AC /* TaskDelegate.swift */,
+				FBFE4D138BF63FB128DFE9911A12449B /* Timeline.swift */,
+				2C009CC5153BC52A1F71796B8CA3135C /* Validation.swift */,
+				3E3DAD068D083C2C568C44AEF1F4D6C9 /* Support Files */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		22179DD4CD4BA488E5DB17D75065A2D8 /* Pods-ParticleWatchiOS */ = {
+			isa = PBXGroup;
+			children = (
+				A45A6B33A5AD177CEC9AB364012F8115 /* Pods-ParticleWatchiOS.modulemap */,
+				D5AA15CD095581A843375E3374C9FB2E /* Pods-ParticleWatchiOS-acknowledgements.markdown */,
+				A2B8ACC110C31C879BD0CE243B793E08 /* Pods-ParticleWatchiOS-acknowledgements.plist */,
+				85D36847C3DCA1B1AEFA721A7B8C5C65 /* Pods-ParticleWatchiOS-dummy.m */,
+				AC50A0FF33792CD1C5DC43ECA4AC45CC /* Pods-ParticleWatchiOS-frameworks.sh */,
+				33B1AB5C6926B92C6232D28E4DB9F652 /* Pods-ParticleWatchiOS-Info.plist */,
+				A8C1BF471F59CDAFDDAD08603C5EC46F /* Pods-ParticleWatchiOS-umbrella.h */,
+				0BA463EDC284DCF74C6F374DF50CA763 /* Pods-ParticleWatchiOS.debug.xcconfig */,
+				F2633A0FEE505AFA973E417EF1ED6B02 /* Pods-ParticleWatchiOS.release.xcconfig */,
+			);
+			name = "Pods-ParticleWatchiOS";
+			path = "Target Support Files/Pods-ParticleWatchiOS";
+			sourceTree = "<group>";
+		};
+		26F2FEFB362AD30EFBC1AE1E3A63BC4F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				22179DD4CD4BA488E5DB17D75065A2D8 /* Pods-ParticleWatchiOS */,
+				4C03E38859DC165013E1E61AB4186205 /* Pods-ParticleWatchiOS WatchKit App */,
+				7EFBAB7876291D85B2AAA4D3F477CA99 /* Pods-ParticleWatchiOS WatchKit Extension */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3BAFB4B114C1962F02BDEA82A92C7267 /* Particle-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				61C06622FB263753FDCA201EAC2C3D8F /* Particle-SDK.h */,
+				62E827D17159059D9DA27B5FC1444533 /* Helpers */,
+				DCDD6E164C76C24A7FCFBE18CF005594 /* SDK */,
+				4EC8620712C5EB39E85A62AC673D0C33 /* Support Files */,
+			);
+			path = "Particle-SDK";
+			sourceTree = "<group>";
+		};
+		3E3DAD068D083C2C568C44AEF1F4D6C9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				345C40FED7EB916115507B61C29CD541 /* Alamofire-iOS.modulemap */,
+				2394A6191F2DC30392CA555BB26BE570 /* Alamofire-iOS.xcconfig */,
+				4847BB14279AE4F817F174B7FBADC4A2 /* Alamofire-iOS-dummy.m */,
+				CB1F46B5D906B55D116EA6D7FCBD7D4D /* Alamofire-iOS-Info.plist */,
+				7641B8993549E9BAB7067D272594511D /* Alamofire-iOS-prefix.pch */,
+				F113B67E6A1A193646A5D0D840FD18E6 /* Alamofire-iOS-umbrella.h */,
+				6D03487E7401DFA02AC3CEA95814DA0C /* Alamofire-watchOS.modulemap */,
+				1E51A5CDA3D9BF1757031E95F03B2DFC /* Alamofire-watchOS.xcconfig */,
+				3B137F775091351A7B7F8316EE6E875E /* Alamofire-watchOS-dummy.m */,
+				59700E8364ECA3F6B921DEDCED24203D /* Alamofire-watchOS-Info.plist */,
+				C41E8612BACF77E4E6952F7997592069 /* Alamofire-watchOS-prefix.pch */,
+				7A36F7221375B6E3B31CF19C410C6818 /* Alamofire-watchOS-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire-iOS";
+			sourceTree = "<group>";
+		};
+		4BA5FB004F2BF3B2AEA82C2B20042A74 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6EB1944859F875B258914AC6FF5D1811 /* AFNetworking.modulemap */,
+				6F5064308B4AF8C34953981439629DAE /* AFNetworking.xcconfig */,
+				9CBAAB8804D2B6CD78FC13A850793CDD /* AFNetworking-dummy.m */,
+				08E2B6D2016AD6CB1039A1C22878D11C /* AFNetworking-Info.plist */,
+				62560E56C8695D5C3AF82D59C932663B /* AFNetworking-prefix.pch */,
+				2502A47847A3BCF87A6096E6426A004F /* AFNetworking-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AFNetworking";
+			sourceTree = "<group>";
+		};
+		4C03E38859DC165013E1E61AB4186205 /* Pods-ParticleWatchiOS WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				FFB92BBACCB6B844514D45F83C552B0A /* Pods-ParticleWatchiOS WatchKit App.modulemap */,
+				5579A81348E0F6D9B15B2CC38439D56E /* Pods-ParticleWatchiOS WatchKit App-acknowledgements.markdown */,
+				FCBD8DBAF1C2CE70AF699D4D632F81C4 /* Pods-ParticleWatchiOS WatchKit App-acknowledgements.plist */,
+				17E3C02963DE0366E9BA7A14A9278497 /* Pods-ParticleWatchiOS WatchKit App-dummy.m */,
+				1EED7293E2BED1523BF03EA772BDD92D /* Pods-ParticleWatchiOS WatchKit App-frameworks.sh */,
+				C7270CF429EFFD5C32E2643F103E5D67 /* Pods-ParticleWatchiOS WatchKit App-Info.plist */,
+				696A4AC48C635E24267490FECD0E1E43 /* Pods-ParticleWatchiOS WatchKit App-umbrella.h */,
+				238E0B8A4E21F0ECC44A50479F47A3EF /* Pods-ParticleWatchiOS WatchKit App.debug.xcconfig */,
+				368FEEE35084772DB01B7401045ADA7A /* Pods-ParticleWatchiOS WatchKit App.release.xcconfig */,
+			);
+			name = "Pods-ParticleWatchiOS WatchKit App";
+			path = "Target Support Files/Pods-ParticleWatchiOS WatchKit App";
+			sourceTree = "<group>";
+		};
+		4C0CA04BB1CDB30A7212CB7A9D980C31 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A49CC111BAC46C14E1DDDC279F0E4CAC /* CoreGraphics.framework */,
+				5C1859363F6A3524B69BDB0CB93ACAA9 /* Foundation.framework */,
+				D0C6E4652C39F76C72E041D985F1F0F8 /* MobileCoreServices.framework */,
+				7A1ADD174A0EF271FDE36B33B3A5BE4C /* Security.framework */,
+				ABF412AA13E848E2058F484DFD4F965B /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4DE9F7F624B880686FF70DFB2AD5D8FB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C56BBF89F2C6819597ABDE7593CF39B9 /* SwiftyJSON-iOS.modulemap */,
+				32A40328E3C46640411C537857B0BCCD /* SwiftyJSON-iOS.xcconfig */,
+				0ABF465E68BBB4122750D190F4F72F15 /* SwiftyJSON-iOS-dummy.m */,
+				258784EF8731C6107A7ACC0583579DB1 /* SwiftyJSON-iOS-Info.plist */,
+				41CF18147DBEF048D9337F7278F0DD00 /* SwiftyJSON-iOS-prefix.pch */,
+				F48E9E03D04D7CACBCA79F5AD3236C9F /* SwiftyJSON-iOS-umbrella.h */,
+				CE53360B2891E81267942C693DEC134D /* SwiftyJSON-watchOS.modulemap */,
+				81B5B778D9797BE0BA76C4F58E988BFC /* SwiftyJSON-watchOS.xcconfig */,
+				BF2752454517106EABC01C50FB2A1BCE /* SwiftyJSON-watchOS-dummy.m */,
+				55814121CC62DEBD4FAE8A8F36990098 /* SwiftyJSON-watchOS-Info.plist */,
+				1D781D96E7605625E047B96B95218B15 /* SwiftyJSON-watchOS-prefix.pch */,
+				BB62D975C3D25D8F1612B32A8219FC90 /* SwiftyJSON-watchOS-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON-iOS";
+			sourceTree = "<group>";
+		};
+		4EC8620712C5EB39E85A62AC673D0C33 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				95E6EF39377052B9E782E47D56748F93 /* Particle-SDK.modulemap */,
+				62D11D82F8C98B51422BC5C80CC185EF /* Particle-SDK.xcconfig */,
+				D987E8C881D0C859D5504775D2875A66 /* Particle-SDK-dummy.m */,
+				F7AA32340DE197C8E954D3C4703C2EA4 /* Particle-SDK-Info.plist */,
+				D50EAF5D7548BD58FFB28B9FC625AD6D /* Particle-SDK-prefix.pch */,
+				27810A06B756DE922DAA1745445D9508 /* Particle-SDK-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Particle-SDK";
+			sourceTree = "<group>";
+		};
+		62E827D17159059D9DA27B5FC1444533 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				017F993848F94445B22BE3A3D0E2A51A /* EventSource.h */,
+				994D4CF05FD7FFCB40ADA3CB399F4C02 /* EventSource.m */,
+				662D8796DFA7F2147AA7591CA8E723C9 /* KeychainHelper.h */,
+				0C5A9CD361D31B60778C6C9CB4D722CB /* KeychainHelper.m */,
+				F232F02351D2E2CFE625071582124B9A /* ParticleErrorHelper.h */,
+				4252D8C05E3FFD9B099870F338F07B47 /* ParticleErrorHelper.m */,
+				C0D60ADAA0A23EA24E2D2BCEC8A26B52 /* ParticleLogger.h */,
+				E7D0352932E63BB6225E1DBBB6AFD554 /* ParticleLogger.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		63909A4DB7F8CCED919D520B1B899865 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50605BC812B30F3FBD3260A11D96BAB0 /* AFNetworking.framework */,
+				4C0CA04BB1CDB30A7212CB7A9D980C31 /* iOS */,
+				CAE9C395068194BCB0D5E9B406251CC9 /* watchOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6AF0C239E35660E89FDE1030E6F2996C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4FA15D44DF6BAC7550EDEED10862AA3 /* AFNetworking.framework */,
+				966AA42878212207687E9A2A4DBCD618 /* Alamofire.framework */,
+				43DA6DFAA898F949ACBD91D709EF13F8 /* Alamofire.framework */,
+				537FCF32D6E5F7461FEF5787028B14F6 /* Particle_SDK.framework */,
+				0DB79B28B39F1544A76C07703A91EBCE /* Pods_ParticleWatchiOS.framework */,
+				5AE4C8F18F2BF1E105EA3FE1EF093A60 /* Pods_ParticleWatchiOS_WatchKit_App.framework */,
+				89D3FBEBD89B50B2CEFDA03FD2C954D9 /* Pods_ParticleWatchiOS_WatchKit_Extension.framework */,
+				749D4F911D9251D5E6D1603C57F820D9 /* SwiftyJSON.framework */,
+				6F348CF3DF73CCBE882148B54AFDFDD5 /* SwiftyJSON.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6FD9FF0FA5F62F2BC386054E940FA38E /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				859FB1FD9DECEDBFF7F0C695EBBA55E7 /* AFCompatibilityMacros.h */,
+				12747B9D59A33205B79E85DC386781AB /* AFHTTPSessionManager.h */,
+				17C109DB69D241ED7D7FF4E77CE89EDB /* AFHTTPSessionManager.m */,
+				82C7C6231BFD3D46307587387CB413A5 /* AFURLSessionManager.h */,
+				9C2B5FE88DB1811DEDC5BE871424D93C /* AFURLSessionManager.m */,
+			);
+			name = NSURLSession;
+			sourceTree = "<group>";
+		};
+		7EFBAB7876291D85B2AAA4D3F477CA99 /* Pods-ParticleWatchiOS WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7DB9ADFAF383ECFA9FAD22A3051AC884 /* Pods-ParticleWatchiOS WatchKit Extension.modulemap */,
+				73B2AAC02AD19BF39FA92020D26BF0F5 /* Pods-ParticleWatchiOS WatchKit Extension-acknowledgements.markdown */,
+				DE2DBAA7FBC115493CB60CE5C5F1BD54 /* Pods-ParticleWatchiOS WatchKit Extension-acknowledgements.plist */,
+				1B3E42723E2C2C2C2298256C0243C9F5 /* Pods-ParticleWatchiOS WatchKit Extension-dummy.m */,
+				2D3864AA9C8C195DC3118D391B9A5168 /* Pods-ParticleWatchiOS WatchKit Extension-frameworks.sh */,
+				FA81E787392DA7C12F00C99F2F0A3488 /* Pods-ParticleWatchiOS WatchKit Extension-Info.plist */,
+				F7496248ED48367A045B37DC0BDA61E8 /* Pods-ParticleWatchiOS WatchKit Extension-umbrella.h */,
+				D32B106E7BBD4ED9751E1A6944392B14 /* Pods-ParticleWatchiOS WatchKit Extension.debug.xcconfig */,
+				25E1C3A5B2E7CAA0010A861E974E3103 /* Pods-ParticleWatchiOS WatchKit Extension.release.xcconfig */,
+			);
+			name = "Pods-ParticleWatchiOS WatchKit Extension";
+			path = "Target Support Files/Pods-ParticleWatchiOS WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		9F2149F05B6A2C407B9E1F7600DDB2B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B71EE9186D26B6092845CF7D8A83D48C /* AFNetworking */,
+				1310550C39AFCD052B8F2E420E95091B /* Alamofire */,
+				3BAFB4B114C1962F02BDEA82A92C7267 /* Particle-SDK */,
+				A17C4CA019539E32BF88CA5D8BC3B402 /* SwiftyJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A17C4CA019539E32BF88CA5D8BC3B402 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				192E4A33308D463E02D48FF0D1818B1F /* SwiftyJSON.swift */,
+				4DE9F7F624B880686FF70DFB2AD5D8FB /* Support Files */,
+			);
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		B71EE9186D26B6092845CF7D8A83D48C /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				B145B9600570FD875BF3875865928960 /* AFNetworking.h */,
+				6FD9FF0FA5F62F2BC386054E940FA38E /* NSURLSession */,
+				BFB993CE33C95E3BA55F574E711430EF /* Reachability */,
+				06344CA664601545636F584AE8D2E7CE /* Security */,
+				E42F7B66E1FE59A1EC6B65EFF7DD5270 /* Serialization */,
+				4BA5FB004F2BF3B2AEA82C2B20042A74 /* Support Files */,
+				C5056D35EE91CC91D8C8885248A4B0CC /* UIKit */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		BFB993CE33C95E3BA55F574E711430EF /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				6E68B02CE43F8651107198F76C734681 /* AFNetworkReachabilityManager.h */,
+				5CFBAF8E4702DBD9204E5EEE13FFB886 /* AFNetworkReachabilityManager.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		C5056D35EE91CC91D8C8885248A4B0CC /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				21B73D7268B2CD6FDEDAF639D107C864 /* AFAutoPurgingImageCache.h */,
+				95E4B9F88B787DC6F5200613BE77A066 /* AFAutoPurgingImageCache.m */,
+				5464FCD870897F06C3E06DC75A8A6A28 /* AFImageDownloader.h */,
+				3CFB0CEE3F31528705509AB45735953A /* AFImageDownloader.m */,
+				2460D5C5F1EB493653C13F3366677E82 /* AFNetworkActivityIndicatorManager.h */,
+				D97A2A8C2FCD6D8FE1E090D48E5E6C20 /* AFNetworkActivityIndicatorManager.m */,
+				5DE131569DA63EE2CE732B4AC764B711 /* UIActivityIndicatorView+AFNetworking.h */,
+				BCB6E09632FF4800D795155E4C98B586 /* UIActivityIndicatorView+AFNetworking.m */,
+				EFD8779AD98FF49546853BDBAF724A37 /* UIButton+AFNetworking.h */,
+				20F625BCC0BFD52BBC7DB9D2FF4823C4 /* UIButton+AFNetworking.m */,
+				5B056B7081845CF13718860ABF475C83 /* UIImage+AFNetworking.h */,
+				A497EE66F6685495E03F7F4040D2D525 /* UIImageView+AFNetworking.h */,
+				B57E62BF63B5CB2C0F90B27284B73DA5 /* UIImageView+AFNetworking.m */,
+				17C309922058D9862337B8F9DF51B9DE /* UIKit+AFNetworking.h */,
+				BBA88870923A46A8ADCEE17FDD6EC563 /* UIProgressView+AFNetworking.h */,
+				E958E22CE23D9EB56B5D6FA15C022BEE /* UIProgressView+AFNetworking.m */,
+				CE7A0609A63AA99FDA50B26FA8387A0D /* UIRefreshControl+AFNetworking.h */,
+				A266FFB3C37A82FE998F728E45A129EF /* UIRefreshControl+AFNetworking.m */,
+				35F81622CD00F1157FEC4D9D2AAD8A0F /* UIWebView+AFNetworking.h */,
+				6C141D5F678D9E9E97FAB16D0F259CB5 /* UIWebView+AFNetworking.m */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		CAE9C395068194BCB0D5E9B406251CC9 /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				5906A47A12CDE994068623A158170A4E /* Foundation.framework */,
+			);
+			name = watchOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				63909A4DB7F8CCED919D520B1B899865 /* Frameworks */,
+				9F2149F05B6A2C407B9E1F7600DDB2B3 /* Pods */,
+				6AF0C239E35660E89FDE1030E6F2996C /* Products */,
+				26F2FEFB362AD30EFBC1AE1E3A63BC4F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DCDD6E164C76C24A7FCFBE18CF005594 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				6A0318FED4EC00059BDB2BFD19A27C95 /* ParticleCloud.h */,
+				B938AFA9ABE2BCBE9DB7C895EBF30175 /* ParticleCloud.m */,
+				7D72B914A441D0EB19B0F027DCFE2C80 /* ParticleDevice.h */,
+				6C01C6AF4658833552E93AE89C094726 /* ParticleDevice.m */,
+				5F4C80687C33401BDD18D50278A4F25A /* ParticleEvent.h */,
+				5B8FF682C8946D449CB2937D6B52188D /* ParticleEvent.m */,
+				F7D91D026445707912C8CFAAC24B1C50 /* ParticleNetwork.h */,
+				EC85E5C0646DBABBC3547A827E73643C /* ParticleNetwork.m */,
+				FD80A9C78A17FCC17BB6E4AE26BE2C2F /* ParticlePricingInfo.h */,
+				726D8DEAE5D91468B4C478EB7250A452 /* ParticlePricingInfo.m */,
+				FBFDB985DE9CF1AB0640AA0F5BC8A783 /* ParticleSession.h */,
+				A7D703B0DF55F080E63ABA76282BC192 /* ParticleSession.m */,
+				38BA40B2233321FDDAB1543D591881F7 /* ParticleSimInfo.h */,
+				55D673E280B74FF1FE273D4BAA8D3EDB /* ParticleSimInfo.m */,
+			);
+			name = SDK;
+			sourceTree = "<group>";
+		};
+		E42F7B66E1FE59A1EC6B65EFF7DD5270 /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				1888364EFA921443BABCA5B16AA84C32 /* AFURLRequestSerialization.h */,
+				49023865C82F4228668B96C858BF5DE2 /* AFURLRequestSerialization.m */,
+				CDF6960A7AEB945737323927C28CE12E /* AFURLResponseSerialization.h */,
+				7F0D68BEBF786D6DA71EA62A9FDBD95B /* AFURLResponseSerialization.m */,
+			);
+			name = Serialization;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		139CCFC019C1EDC4848243AC71669695 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B464CF6B4AE8469ED16618437E8AB6A /* Pods-ParticleWatchiOS WatchKit App-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DA17A25544C4728D4BD212A7394986A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C581285B8AB6D47A2BBC0F1FB0436437 /* Alamofire-iOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BF338CBF034425F7896F297B39B4E99 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B19696C4C8DC8FF812636E6999B90584 /* Pods-ParticleWatchiOS WatchKit Extension-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6775CAB0696B3E44DBA852DD587B3CCD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05167D1AB7B31CA1CA134C72487EDD79 /* SwiftyJSON-watchOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		783CB46B170554EE6C3448C14FE544D4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48D5B862DCFBFA49495393126DD0AE37 /* Pods-ParticleWatchiOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79C52AF6536F3C6AA291F6477F03CC3B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98F8EDE5E9F8B2235D6810942505EB86 /* EventSource.h in Headers */,
+				E0CBC09AEC270F5E7430E684C6DE8440 /* KeychainHelper.h in Headers */,
+				EC8F06D3F81B4F270179EC6C3F60156D /* Particle-SDK-umbrella.h in Headers */,
+				722F9E517B17DC904ED3A33D2530C51F /* Particle-SDK.h in Headers */,
+				0BB60DCD0B9D12F9B9394238A76E09E4 /* ParticleCloud.h in Headers */,
+				2D772FF3E89306EEA24BE73F5B180F3C /* ParticleDevice.h in Headers */,
+				DB4C4DD65A02446CC0CC8BDBEAE89978 /* ParticleErrorHelper.h in Headers */,
+				321ECBD5AFFD54101977B2D9E28E6ED6 /* ParticleEvent.h in Headers */,
+				635BD71893D73A48BC94ED76D768E640 /* ParticleLogger.h in Headers */,
+				6FDFC185A4DBAB58A58395606CBD743D /* ParticleNetwork.h in Headers */,
+				A1D5DFBB770406755B92EDFA2F3BFF7F /* ParticlePricingInfo.h in Headers */,
+				2049792C7A71D906B216F6A9AB02BF8A /* ParticleSession.h in Headers */,
+				77F9726AF91222EEAF5630B72D53CD63 /* ParticleSimInfo.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		924E5478006A87D5E13941CCB12BA3F9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				016D4F6D0512E0659937DB5D9A7C5384 /* Alamofire-watchOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB3E389A1772D233658F549FE2EE30E9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A404A7E2D885532CF33A86AEFE1BBF7 /* SwiftyJSON-iOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5F3954755BD8248E767F716DA24E14F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				870044029B3BA449A0932AAE3A495DE9 /* AFAutoPurgingImageCache.h in Headers */,
+				F407B4E0B40A8AA4CA7443563F105E40 /* AFCompatibilityMacros.h in Headers */,
+				169B3FC2BD33B8FBC2D4C35A1C1DC6BF /* AFHTTPSessionManager.h in Headers */,
+				E261B82A0EEFE0EA897EA1A36C69C1CE /* AFImageDownloader.h in Headers */,
+				2AE1F29F045D02727E815DBBAC8C7B4F /* AFNetworkActivityIndicatorManager.h in Headers */,
+				5036C1D6D87D4DA731C972A410C17ABC /* AFNetworking-umbrella.h in Headers */,
+				7F372985CE80B69B5524CC3277E1C1AF /* AFNetworking.h in Headers */,
+				A9E429ECAF059D9D471F3AE5C1BAC2B0 /* AFNetworkReachabilityManager.h in Headers */,
+				3E112DA53DD725C9A3185A54EB342EAF /* AFSecurityPolicy.h in Headers */,
+				17D6A066C5F987FEFF8B89D7EFDFD375 /* AFURLRequestSerialization.h in Headers */,
+				47FF1D17418AB1144FDE0E46427F4877 /* AFURLResponseSerialization.h in Headers */,
+				D59E2A517A48D101120EB57F90F140A5 /* AFURLSessionManager.h in Headers */,
+				B5AD0B8F0F9304975A01978B2908B62F /* UIActivityIndicatorView+AFNetworking.h in Headers */,
+				AEA4CF8EE7E08C13B4A71A634F9F3B5B /* UIButton+AFNetworking.h in Headers */,
+				09E2F57C3C2B897ACC8AF5C49F1E9592 /* UIImage+AFNetworking.h in Headers */,
+				6F6C4414DE96E08267712DA4C17C3CBB /* UIImageView+AFNetworking.h in Headers */,
+				9B41316D2DE09092FA0143B33A74B769 /* UIKit+AFNetworking.h in Headers */,
+				3A186F3A7711FAAB8C60562D63FF0D9F /* UIProgressView+AFNetworking.h in Headers */,
+				09E785555B549DE5974C744DB8324B91 /* UIRefreshControl+AFNetworking.h in Headers */,
+				F4FED6C37367BC46B92BB3FE18D233B8 /* UIWebView+AFNetworking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0130B3724283586C0E9D2A112D4F2AA1 /* AFNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41D6DFBE997E173748D09E9A11D890A3 /* Build configuration list for PBXNativeTarget "AFNetworking" */;
+			buildPhases = (
+				F5F3954755BD8248E767F716DA24E14F /* Headers */,
+				E16D45883ACDDBE532CC4EABBA7C6196 /* Sources */,
+				99296CB2AAE82C49C9B4A74A8F4D8341 /* Frameworks */,
+				51B338009A28492821105E82A3A3C869 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AFNetworking;
+			productName = AFNetworking;
+			productReference = A4FA15D44DF6BAC7550EDEED10862AA3 /* AFNetworking.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		24D22157F867D8AE7A8DC7557C25F46F /* Pods-ParticleWatchiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C8598FC6AD3C089CD0467F68831C2C6 /* Build configuration list for PBXNativeTarget "Pods-ParticleWatchiOS" */;
+			buildPhases = (
+				783CB46B170554EE6C3448C14FE544D4 /* Headers */,
+				8D62BCC5DB798A42B4D3117E4380FA0E /* Sources */,
+				9978DEEE05AAA072065CBB1BB52F6171 /* Frameworks */,
+				3007409BCDF32A48744A193B3D9DA40C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B06D80326B43E374C342628D64E5007 /* PBXTargetDependency */,
+				E81A7941E3D0E21F6528C2B19BD7D1AE /* PBXTargetDependency */,
+				BF536D50B7FE3DA91AD1407C510F34AC /* PBXTargetDependency */,
+				51ECFAAE61435E91BB5841D90E58686E /* PBXTargetDependency */,
+			);
+			name = "Pods-ParticleWatchiOS";
+			productName = "Pods-ParticleWatchiOS";
+			productReference = 0DB79B28B39F1544A76C07703A91EBCE /* Pods_ParticleWatchiOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		626CE66A6F380216D14F11A978B9B9DB /* Pods-ParticleWatchiOS WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2198AD25858230A64ED78B0A30644AF /* Build configuration list for PBXNativeTarget "Pods-ParticleWatchiOS WatchKit App" */;
+			buildPhases = (
+				139CCFC019C1EDC4848243AC71669695 /* Headers */,
+				8ABA1505CF0726F0F95E9FC819865942 /* Sources */,
+				2C8A0B6DAC49A082E1D38F68D01A03E0 /* Frameworks */,
+				92E96A92662899997DF8DA1F78103BA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF7B90DC3B2F34D193A08CABE07F6400 /* PBXTargetDependency */,
+				53B835EB14A9C1FE1622FC29E86D50D6 /* PBXTargetDependency */,
+			);
+			name = "Pods-ParticleWatchiOS WatchKit App";
+			productName = "Pods-ParticleWatchiOS WatchKit App";
+			productReference = 5AE4C8F18F2BF1E105EA3FE1EF093A60 /* Pods_ParticleWatchiOS_WatchKit_App.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		66F51BC925FD5FB829E8D422C690BDF0 /* Alamofire-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E61069F691B31002ED13C26F610A6144 /* Build configuration list for PBXNativeTarget "Alamofire-watchOS" */;
+			buildPhases = (
+				924E5478006A87D5E13941CCB12BA3F9 /* Headers */,
+				4F26B3D9FD1CB8F709BE24709C1C79B5 /* Sources */,
+				152219B0468DDEDC15A7E8759DF2FB2F /* Frameworks */,
+				F98B8366BD5F971AECCBE2D0B878D65B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Alamofire-watchOS";
+			productName = "Alamofire-watchOS";
+			productReference = 43DA6DFAA898F949ACBD91D709EF13F8 /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		68AB791372E806C05E7AAFFFF40D6B7F /* Particle-SDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2A2E3E8F0612D0A608771DA8083586E /* Build configuration list for PBXNativeTarget "Particle-SDK" */;
+			buildPhases = (
+				79C52AF6536F3C6AA291F6477F03CC3B /* Headers */,
+				7FFEA781D8BEE2DDBCBBE06A29BB5AD0 /* Sources */,
+				C19B169F97D8E789A3AE6A0E82F53983 /* Frameworks */,
+				D388A64D7589AD23EEC929B99E474EF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8E90C56C7ACFE5F7987939783ED97E6 /* PBXTargetDependency */,
+			);
+			name = "Particle-SDK";
+			productName = "Particle-SDK";
+			productReference = 537FCF32D6E5F7461FEF5787028B14F6 /* Particle_SDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7737959F044655E11A16E572A933F46D /* SwiftyJSON-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 106D537E49DCE305EDE81867B0665F7B /* Build configuration list for PBXNativeTarget "SwiftyJSON-watchOS" */;
+			buildPhases = (
+				6775CAB0696B3E44DBA852DD587B3CCD /* Headers */,
+				A7D103B6CA00AD88E4F3D436511577EB /* Sources */,
+				E0BB2D1C546CE0D456044A0AC5F1C976 /* Frameworks */,
+				17292C829221C9384F9B69279B1AE54B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftyJSON-watchOS";
+			productName = "SwiftyJSON-watchOS";
+			productReference = 749D4F911D9251D5E6D1603C57F820D9 /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A5322B4ECEFC34E7F49DDC531D0D3A86 /* Pods-ParticleWatchiOS WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8780A2F1948993A8180A114CFCFEB8B6 /* Build configuration list for PBXNativeTarget "Pods-ParticleWatchiOS WatchKit Extension" */;
+			buildPhases = (
+				3BF338CBF034425F7896F297B39B4E99 /* Headers */,
+				D8C834BADEF5E4662174B867BF1AB176 /* Sources */,
+				F811CEE0E918BDF873BBD036A36E60C6 /* Frameworks */,
+				9D8E3E251ADDCEC16767DDF992049FFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				303C15FDC2F7191CAAA4B891CEEDC654 /* PBXTargetDependency */,
+				B3DC6EEEEBAFCD78DDB8E0F5D19C1C9D /* PBXTargetDependency */,
+			);
+			name = "Pods-ParticleWatchiOS WatchKit Extension";
+			productName = "Pods-ParticleWatchiOS WatchKit Extension";
+			productReference = 89D3FBEBD89B50B2CEFDA03FD2C954D9 /* Pods_ParticleWatchiOS_WatchKit_Extension.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BF0C6CD2E713DE257EF65C62E5F27D8A /* SwiftyJSON-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6792D83F7CA096B1C350D132C89E66D /* Build configuration list for PBXNativeTarget "SwiftyJSON-iOS" */;
+			buildPhases = (
+				DB3E389A1772D233658F549FE2EE30E9 /* Headers */,
+				FA071D1EBE2FEC555342FEFC3E3BC685 /* Sources */,
+				0794D38A72DDD467A79DC8B8C9C82A46 /* Frameworks */,
+				42C51D0429AE2772871D0B6083B9DD0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftyJSON-iOS";
+			productName = "SwiftyJSON-iOS";
+			productReference = 6F348CF3DF73CCBE882148B54AFDFDD5 /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FD8828BFC368157226E204A32CD5B6DE /* Alamofire-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E65E740C96442990E6E9CDF05EE3EFEF /* Build configuration list for PBXNativeTarget "Alamofire-iOS" */;
+			buildPhases = (
+				1DA17A25544C4728D4BD212A7394986A /* Headers */,
+				22F0F0797A0F8589B712179A239E44F0 /* Sources */,
+				51C49E6511B1FE5314E69AD783B2DF18 /* Frameworks */,
+				C3F35C916725EA4118F0150CF661682F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Alamofire-iOS";
+			productName = "Alamofire-iOS";
+			productReference = 966AA42878212207687E9A2A4DBCD618 /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 6AF0C239E35660E89FDE1030E6F2996C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0130B3724283586C0E9D2A112D4F2AA1 /* AFNetworking */,
+				FD8828BFC368157226E204A32CD5B6DE /* Alamofire-iOS */,
+				66F51BC925FD5FB829E8D422C690BDF0 /* Alamofire-watchOS */,
+				68AB791372E806C05E7AAFFFF40D6B7F /* Particle-SDK */,
+				24D22157F867D8AE7A8DC7557C25F46F /* Pods-ParticleWatchiOS */,
+				626CE66A6F380216D14F11A978B9B9DB /* Pods-ParticleWatchiOS WatchKit App */,
+				A5322B4ECEFC34E7F49DDC531D0D3A86 /* Pods-ParticleWatchiOS WatchKit Extension */,
+				BF0C6CD2E713DE257EF65C62E5F27D8A /* SwiftyJSON-iOS */,
+				7737959F044655E11A16E572A933F46D /* SwiftyJSON-watchOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17292C829221C9384F9B69279B1AE54B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3007409BCDF32A48744A193B3D9DA40C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42C51D0429AE2772871D0B6083B9DD0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51B338009A28492821105E82A3A3C869 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92E96A92662899997DF8DA1F78103BA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D8E3E251ADDCEC16767DDF992049FFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3F35C916725EA4118F0150CF661682F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D388A64D7589AD23EEC929B99E474EF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F98B8366BD5F971AECCBE2D0B878D65B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22F0F0797A0F8589B712179A239E44F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				456F5AB16DE22E601CA5EB4200088DD0 /* AFError.swift in Sources */,
+				912A476FD85EECC920A508E12460EFB8 /* Alamofire-iOS-dummy.m in Sources */,
+				4CE4A9C57F0DE9DF2CF65F63D68B6FEB /* Alamofire.swift in Sources */,
+				670AB4D559C4E66CF0B60B27C0DE2646 /* DispatchQueue+Alamofire.swift in Sources */,
+				13D4ACAB3F0392D7263702403F4C4C77 /* MultipartFormData.swift in Sources */,
+				AFA9BCA194B0E1ABFDED55E02B3153F5 /* NetworkReachabilityManager.swift in Sources */,
+				F2884C16786810D1B40F39DAFBCF4303 /* Notifications.swift in Sources */,
+				0BD66FAA67A327E7DDD184F40EC99076 /* ParameterEncoding.swift in Sources */,
+				91D45871DE32A3C1B2E845F54E9A2660 /* Request.swift in Sources */,
+				9A0D8180A8542BD19E2AEF533626FD32 /* Response.swift in Sources */,
+				E9478B9C29741BB15C26529B33AD798D /* ResponseSerialization.swift in Sources */,
+				546323B71CA763DE815B4955EE3F2064 /* Result.swift in Sources */,
+				EE822282C912F20733663B0E9FAEAD6B /* ServerTrustPolicy.swift in Sources */,
+				3AB990FDF4FCA4090651180F1325B815 /* SessionDelegate.swift in Sources */,
+				A3007EA32DCAB1CA67795414671FF618 /* SessionManager.swift in Sources */,
+				01CAEC5F6F9431E4D251A35A36F6A9EE /* TaskDelegate.swift in Sources */,
+				82C72B35091073596FE61D069FFB8A80 /* Timeline.swift in Sources */,
+				98EB0914754838B056FC2410E28436A1 /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F26B3D9FD1CB8F709BE24709C1C79B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4CAA381B50248056BDFB9AFBD8867C9 /* AFError.swift in Sources */,
+				B4475FE96A5EB06ABC96CEA377C62B0C /* Alamofire-watchOS-dummy.m in Sources */,
+				2F3A7727F25809D20B4D5115D64F545A /* Alamofire.swift in Sources */,
+				FF0835B3ECDED1DE76455DE10A228B58 /* DispatchQueue+Alamofire.swift in Sources */,
+				E0DF3A0ED5FAA2FE0C1E2396CBC4F968 /* MultipartFormData.swift in Sources */,
+				E2F9BFECBBEBDF515A49318C8AF36D74 /* NetworkReachabilityManager.swift in Sources */,
+				A0E1AFB4104DD8C24BA35979E670F51F /* Notifications.swift in Sources */,
+				C7E530B3A0405BD8B338F9D3DB0978C8 /* ParameterEncoding.swift in Sources */,
+				0281DB230A246653CBFC06716D26833C /* Request.swift in Sources */,
+				495FE1474EB2181D16F1D6BCAB1CF2C6 /* Response.swift in Sources */,
+				0F7BDECDD56B33D440AE53E632594FA2 /* ResponseSerialization.swift in Sources */,
+				F197A795CA0D500CCA5351183EDAF6BD /* Result.swift in Sources */,
+				5DC223206D9E0964E6D1E700896661BC /* ServerTrustPolicy.swift in Sources */,
+				C6B9E73B20C867D11C52F1FF43D1908B /* SessionDelegate.swift in Sources */,
+				451FB27A7555760099E5B2C1AF2844C3 /* SessionManager.swift in Sources */,
+				9710AA8455D26EB1E65EC48EB73662E5 /* TaskDelegate.swift in Sources */,
+				EA2DA37B7ED37959847875D89F6D3271 /* Timeline.swift in Sources */,
+				4C83C1F54714ACFB4B695E513A2BB1B3 /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FFEA781D8BEE2DDBCBBE06A29BB5AD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89F6A5F03290DFB6D82D4D65AFFBE59A /* EventSource.m in Sources */,
+				E3B769692892DF0D48B50C51659B7B40 /* KeychainHelper.m in Sources */,
+				9B19322761C64DE96140D9E99054171B /* Particle-SDK-dummy.m in Sources */,
+				104D4E8B5DAD2CC41922DDC83C354CB5 /* ParticleCloud.m in Sources */,
+				6CE5CC02EAA05D92F7592AD1E3F8FCE5 /* ParticleDevice.m in Sources */,
+				A510E0CAFFD738CD982D7FF14AA89CEA /* ParticleErrorHelper.m in Sources */,
+				A6FAB3D0265464F0EED52EA3D31859AE /* ParticleEvent.m in Sources */,
+				759DB228DFFB09E64A0EBA06E9CAF50A /* ParticleLogger.m in Sources */,
+				F8F36FE6018CA49838DA1345E3F1D62D /* ParticleNetwork.m in Sources */,
+				304B72B940E966DDD9F6B44EA9FC2CDC /* ParticlePricingInfo.m in Sources */,
+				104CDF3CC5DC20EADBD3A20BA1AFBCEF /* ParticleSession.m in Sources */,
+				96868A69D798815D76CCDA7B5F290BA2 /* ParticleSimInfo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ABA1505CF0726F0F95E9FC819865942 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7F4B59F055FEEB2EFADEB6175A0FDB8 /* Pods-ParticleWatchiOS WatchKit App-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D62BCC5DB798A42B4D3117E4380FA0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				580F8BD46A01637419EB211D0E27556F /* Pods-ParticleWatchiOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7D103B6CA00AD88E4F3D436511577EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				141D3443BD402A0DF35E470BFD65736A /* SwiftyJSON-watchOS-dummy.m in Sources */,
+				52F6FF9AE7BB34610B8AB77C7D4B9C6F /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8C834BADEF5E4662174B867BF1AB176 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				605919BE2A9B398425A1069C1E2645D2 /* Pods-ParticleWatchiOS WatchKit Extension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E16D45883ACDDBE532CC4EABBA7C6196 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3033C2DE9CB2085ECBB95717CFB6425A /* AFAutoPurgingImageCache.m in Sources */,
+				77876997CA63145CC72A2D6FB5758513 /* AFHTTPSessionManager.m in Sources */,
+				0D40EE6956924384435BBBD4B718DEC8 /* AFImageDownloader.m in Sources */,
+				6E4C66ABA27A0F4EFDAA3E8B21A9384F /* AFNetworkActivityIndicatorManager.m in Sources */,
+				3BDC8FBDB7922AA1ABA2C90DBA2DBB35 /* AFNetworking-dummy.m in Sources */,
+				95DAE5AD46A86973A77907D38716F694 /* AFNetworkReachabilityManager.m in Sources */,
+				769B6260247C5624A11411541C0AA4E2 /* AFSecurityPolicy.m in Sources */,
+				E17973BC9CEAE4ED0A7492450F95ACEF /* AFURLRequestSerialization.m in Sources */,
+				A5D86CC71480778ECD0EE81138D48C91 /* AFURLResponseSerialization.m in Sources */,
+				856B571FA3AE9D65E81FACB19E3557F4 /* AFURLSessionManager.m in Sources */,
+				8F96E82F250EE718FA3F08AC9AB58423 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				34A7C5747B4C0825465453E196E57FAA /* UIButton+AFNetworking.m in Sources */,
+				AECB9FD1C271F734476CBF6E84BBFC51 /* UIImageView+AFNetworking.m in Sources */,
+				98114570DFFDF5BD81B7724B4810501D /* UIProgressView+AFNetworking.m in Sources */,
+				D29F2AD07AF58334781F008905C30C35 /* UIRefreshControl+AFNetworking.m in Sources */,
+				DC2186197E507C0C73DFB0600D54867A /* UIWebView+AFNetworking.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA071D1EBE2FEC555342FEFC3E3BC685 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B712538B8934F3BA2EABC87A7CEE903 /* SwiftyJSON-iOS-dummy.m in Sources */,
+				84F66C3F5854092152611606892111E2 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		303C15FDC2F7191CAAA4B891CEEDC654 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire-watchOS";
+			target = 66F51BC925FD5FB829E8D422C690BDF0 /* Alamofire-watchOS */;
+			targetProxy = 6FBB15A7E6045504C6327D089CECD251 /* PBXContainerItemProxy */;
+		};
+		51ECFAAE61435E91BB5841D90E58686E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SwiftyJSON-iOS";
+			target = BF0C6CD2E713DE257EF65C62E5F27D8A /* SwiftyJSON-iOS */;
+			targetProxy = 5279488AC6F9AF9B606230EBBD62792F /* PBXContainerItemProxy */;
+		};
+		53B835EB14A9C1FE1622FC29E86D50D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SwiftyJSON-watchOS";
+			target = 7737959F044655E11A16E572A933F46D /* SwiftyJSON-watchOS */;
+			targetProxy = 4DA3ED6EDA8C19402B5F466A4A22F739 /* PBXContainerItemProxy */;
+		};
+		8B06D80326B43E374C342628D64E5007 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = 0130B3724283586C0E9D2A112D4F2AA1 /* AFNetworking */;
+			targetProxy = D7A151445AE585A1043CE0716A781F5D /* PBXContainerItemProxy */;
+		};
+		B3DC6EEEEBAFCD78DDB8E0F5D19C1C9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SwiftyJSON-watchOS";
+			target = 7737959F044655E11A16E572A933F46D /* SwiftyJSON-watchOS */;
+			targetProxy = 1D84DBC71DEEF8A36CB11F313ACEFCE3 /* PBXContainerItemProxy */;
+		};
+		BF536D50B7FE3DA91AD1407C510F34AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Particle-SDK";
+			target = 68AB791372E806C05E7AAFFFF40D6B7F /* Particle-SDK */;
+			targetProxy = D83F4B971E2D6F9B5A347BF0DFFB81AA /* PBXContainerItemProxy */;
+		};
+		D8E90C56C7ACFE5F7987939783ED97E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = 0130B3724283586C0E9D2A112D4F2AA1 /* AFNetworking */;
+			targetProxy = 04B180199E29AFB5952CDC155B376580 /* PBXContainerItemProxy */;
+		};
+		DF7B90DC3B2F34D193A08CABE07F6400 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire-watchOS";
+			target = 66F51BC925FD5FB829E8D422C690BDF0 /* Alamofire-watchOS */;
+			targetProxy = 8557F1BAD5004599F49A3D5C2B8D3676 /* PBXContainerItemProxy */;
+		};
+		E81A7941E3D0E21F6528C2B19BD7D1AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire-iOS";
+			target = FD8828BFC368157226E204A32CD5B6DE /* Alamofire-iOS */;
+			targetProxy = F1745042B4C272928F891D6F099C65BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		038439C6D25BA648AB6ADD6F6E98EA09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		2C2276B7D30DCECF57A989CBBBBAE104 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 368FEEE35084772DB01B7401045ADA7A /* Pods-ParticleWatchiOS WatchKit App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ParticleWatchiOS WatchKit App/Pods-ParticleWatchiOS WatchKit App-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ParticleWatchiOS WatchKit App/Pods-ParticleWatchiOS WatchKit App.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		31A2EC5F3417FD057ACFE4DCF2EA7004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62D11D82F8C98B51422BC5C80CC185EF /* Particle-SDK.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Particle-SDK/Particle-SDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Particle-SDK/Particle-SDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Particle-SDK/Particle-SDK.modulemap";
+				PRODUCT_MODULE_NAME = Particle_SDK;
+				PRODUCT_NAME = Particle_SDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		33DDCA07650810A9D1BEE3EFC6B137F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32A40328E3C46640411C537857B0BCCD /* SwiftyJSON-iOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON-iOS/SwiftyJSON-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON-iOS/SwiftyJSON-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON-iOS/SwiftyJSON-iOS.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3BE69400748AD68499CFECC4FA69C901 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2394A6191F2DC30392CA555BB26BE570 /* Alamofire-iOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire-iOS/Alamofire-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire-iOS/Alamofire-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alamofire-iOS/Alamofire-iOS.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4EDED803E2C8FC65A6358D8D8D210976 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81B5B778D9797BE0BA76C4F58E988BFC /* SwiftyJSON-watchOS.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON-watchOS/SwiftyJSON-watchOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON-watchOS/SwiftyJSON-watchOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON-watchOS/SwiftyJSON-watchOS.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		4F3ADD8D65FFE0AED33374443117A55A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81B5B778D9797BE0BA76C4F58E988BFC /* SwiftyJSON-watchOS.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON-watchOS/SwiftyJSON-watchOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON-watchOS/SwiftyJSON-watchOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON-watchOS/SwiftyJSON-watchOS.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		53E8919889AD0A9FB614AAC4991D6C5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2633A0FEE505AFA973E417EF1ED6B02 /* Pods-ParticleWatchiOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ParticleWatchiOS/Pods-ParticleWatchiOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ParticleWatchiOS/Pods-ParticleWatchiOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		55F8B7CF2318638985337055E25F3E9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BA463EDC284DCF74C6F374DF50CA763 /* Pods-ParticleWatchiOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ParticleWatchiOS/Pods-ParticleWatchiOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ParticleWatchiOS/Pods-ParticleWatchiOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		659B2FCE00831625CA71171850BA950C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62D11D82F8C98B51422BC5C80CC185EF /* Particle-SDK.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Particle-SDK/Particle-SDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Particle-SDK/Particle-SDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Particle-SDK/Particle-SDK.modulemap";
+				PRODUCT_MODULE_NAME = Particle_SDK;
+				PRODUCT_NAME = Particle_SDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6E7638B2D3EB182DDD0E40BD184E8E69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F5064308B4AF8C34953981439629DAE /* AFNetworking.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AFNetworking/AFNetworking-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AFNetworking/AFNetworking.modulemap";
+				PRODUCT_MODULE_NAME = AFNetworking;
+				PRODUCT_NAME = AFNetworking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		79B1FFF80038932E516726FECF6F2918 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2394A6191F2DC30392CA555BB26BE570 /* Alamofire-iOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire-iOS/Alamofire-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire-iOS/Alamofire-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alamofire-iOS/Alamofire-iOS.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		839241ADADD91C945BADA61C936C3BC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E51A5CDA3D9BF1757031E95F03B2DFC /* Alamofire-watchOS.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire-watchOS/Alamofire-watchOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire-watchOS/Alamofire-watchOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alamofire-watchOS/Alamofire-watchOS.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		8E86B188F21DE67BBD3EE57C41069E4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25E1C3A5B2E7CAA0010A861E974E3103 /* Pods-ParticleWatchiOS WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ParticleWatchiOS WatchKit Extension/Pods-ParticleWatchiOS WatchKit Extension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ParticleWatchiOS WatchKit Extension/Pods-ParticleWatchiOS WatchKit Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		93EC04A5EE1767BBEA6DA47B5E5B8093 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E51A5CDA3D9BF1757031E95F03B2DFC /* Alamofire-watchOS.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire-watchOS/Alamofire-watchOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire-watchOS/Alamofire-watchOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alamofire-watchOS/Alamofire-watchOS.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		94AA15F73EFC80EC3F3B52118B3110AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		EC7BE7B2E07E4CDB924CB3BE26C920B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32A40328E3C46640411C537857B0BCCD /* SwiftyJSON-iOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON-iOS/SwiftyJSON-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON-iOS/SwiftyJSON-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON-iOS/SwiftyJSON-iOS.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EE988A3FC6109F4384CD5F8720A5C7C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F5064308B4AF8C34953981439629DAE /* AFNetworking.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AFNetworking/AFNetworking-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AFNetworking/AFNetworking.modulemap";
+				PRODUCT_MODULE_NAME = AFNetworking;
+				PRODUCT_NAME = AFNetworking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FE2B7A9F7D0854DCD6F05FCE45D26CDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D32B106E7BBD4ED9751E1A6944392B14 /* Pods-ParticleWatchiOS WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ParticleWatchiOS WatchKit Extension/Pods-ParticleWatchiOS WatchKit Extension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ParticleWatchiOS WatchKit Extension/Pods-ParticleWatchiOS WatchKit Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		FF9451C1A7891D07977365E17DB7B5A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 238E0B8A4E21F0ECC44A50479F47A3EF /* Pods-ParticleWatchiOS WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ParticleWatchiOS WatchKit App/Pods-ParticleWatchiOS WatchKit App-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ParticleWatchiOS WatchKit App/Pods-ParticleWatchiOS WatchKit App.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		106D537E49DCE305EDE81867B0665F7B /* Build configuration list for PBXNativeTarget "SwiftyJSON-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F3ADD8D65FFE0AED33374443117A55A /* Debug */,
+				4EDED803E2C8FC65A6358D8D8D210976 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C8598FC6AD3C089CD0467F68831C2C6 /* Build configuration list for PBXNativeTarget "Pods-ParticleWatchiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55F8B7CF2318638985337055E25F3E9C /* Debug */,
+				53E8919889AD0A9FB614AAC4991D6C5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41D6DFBE997E173748D09E9A11D890A3 /* Build configuration list for PBXNativeTarget "AFNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E7638B2D3EB182DDD0E40BD184E8E69 /* Debug */,
+				EE988A3FC6109F4384CD5F8720A5C7C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94AA15F73EFC80EC3F3B52118B3110AF /* Debug */,
+				038439C6D25BA648AB6ADD6F6E98EA09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8780A2F1948993A8180A114CFCFEB8B6 /* Build configuration list for PBXNativeTarget "Pods-ParticleWatchiOS WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE2B7A9F7D0854DCD6F05FCE45D26CDD /* Debug */,
+				8E86B188F21DE67BBD3EE57C41069E4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2198AD25858230A64ED78B0A30644AF /* Build configuration list for PBXNativeTarget "Pods-ParticleWatchiOS WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF9451C1A7891D07977365E17DB7B5A8 /* Debug */,
+				2C2276B7D30DCECF57A989CBBBBAE104 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2A2E3E8F0612D0A608771DA8083586E /* Build configuration list for PBXNativeTarget "Particle-SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				659B2FCE00831625CA71171850BA950C /* Debug */,
+				31A2EC5F3417FD057ACFE4DCF2EA7004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E61069F691B31002ED13C26F610A6144 /* Build configuration list for PBXNativeTarget "Alamofire-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				839241ADADD91C945BADA61C936C3BC6 /* Debug */,
+				93EC04A5EE1767BBEA6DA47B5E5B8093 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E65E740C96442990E6E9CDF05EE3EFEF /* Build configuration list for PBXNativeTarget "Alamofire-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BE69400748AD68499CFECC4FA69C901 /* Debug */,
+				79B1FFF80038932E516726FECF6F2918 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6792D83F7CA096B1C350D132C89E66D /* Build configuration list for PBXNativeTarget "SwiftyJSON-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33DDCA07650810A9D1BEE3EFC6B137F7 /* Debug */,
+				EC7BE7B2E07E4CDB924CB3BE26C920B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
