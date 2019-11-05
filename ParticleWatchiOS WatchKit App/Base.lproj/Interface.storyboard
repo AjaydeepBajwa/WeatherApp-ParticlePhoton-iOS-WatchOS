@@ -1,15 +1,55 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="ParticleWatchiOS_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="Button" id="qO0-SG-Jmh">
+                            <connections>
+                                <action selector="btnChangeCity" destination="AgC-eL-Hgc" id="KCR-4T-Ndk"/>
+                                <segue destination="i2k-uV-aOi" kind="push" id="f2F-sd-wb8"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="134" y="163"/>
+        </scene>
+        <!--Change City Interface Controller-->
+        <scene sceneID="lfP-jW-jhy">
+            <objects>
+                <controller id="i2k-uV-aOi" customClass="ChangeCityInterfaceController" customModule="ParticleWatchiOS_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Pick city" id="bMh-gm-yXf">
+                            <connections>
+                                <action selector="btnPickcity" destination="i2k-uV-aOi" id="5hG-r2-fuN"/>
+                            </connections>
+                        </button>
+                        <label alignment="left" text="Current City" id="1Bc-QX-YeP"/>
+                        <imageView alignment="left" id="eVd-09-eRZ"/>
+                        <button width="1" alignment="left" title="save City" id="Q9i-CH-u0c">
+                            <connections>
+                                <action selector="btnSavecity" destination="i2k-uV-aOi" id="mdB-sB-k46"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="imgloading" destination="eVd-09-eRZ" id="hZ8-M6-wdO"/>
+                        <outlet property="lblCurrentCity" destination="1Bc-QX-YeP" id="VqE-sr-n3K"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="402" y="163"/>
         </scene>
     </scenes>
 </document>

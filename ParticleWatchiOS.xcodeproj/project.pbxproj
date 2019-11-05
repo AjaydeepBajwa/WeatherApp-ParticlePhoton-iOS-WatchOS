@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		10FE388FD01AC763C80E5A8A /* Pods_ParticleWatchiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB873E5C53A7487FAB9E2E3 /* Pods_ParticleWatchiOS.framework */; };
+		D49B971D2370EF5700025268 /* ChangeCityInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49B971C2370EF5700025268 /* ChangeCityInterfaceController.swift */; };
 		D4CF2735236E9A2200698141 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CF2734236E9A2200698141 /* AppDelegate.swift */; };
 		D4CF2737236E9A2200698141 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CF2736236E9A2200698141 /* ViewController.swift */; };
 		D4CF273A236E9A2200698141 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4CF2738236E9A2200698141 /* Main.storyboard */; };
@@ -76,6 +77,7 @@
 		A56AABE2B286A0508912156E /* Pods_ParticleWatchiOS_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParticleWatchiOS_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACB873E5C53A7487FAB9E2E3 /* Pods_ParticleWatchiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParticleWatchiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFB2512A4771A74BE08254FC /* Pods-ParticleWatchiOS WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParticleWatchiOS WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-ParticleWatchiOS WatchKit Extension/Pods-ParticleWatchiOS WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		D49B971C2370EF5700025268 /* ChangeCityInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeCityInterfaceController.swift; sourceTree = "<group>"; };
 		D4CF2731236E9A2200698141 /* ParticleWatchiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParticleWatchiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4CF2734236E9A2200698141 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4CF2736236E9A2200698141 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				D4CF2759236E9A2500698141 /* ExtensionDelegate.swift */,
 				D4CF275B236E9A2700698141 /* Assets.xcassets */,
 				D4CF275D236E9A2700698141 /* Info.plist */,
+				D49B971C2370EF5700025268 /* ChangeCityInterfaceController.swift */,
 			);
 			path = "ParticleWatchiOS WatchKit Extension";
 			sourceTree = "<group>";
@@ -188,7 +191,6 @@
 				5153A6879F2576D15BF9A887 /* Pods-ParticleWatchiOS WatchKit Extension.debug.xcconfig */,
 				CFB2512A4771A74BE08254FC /* Pods-ParticleWatchiOS WatchKit Extension.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -452,6 +454,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D49B971D2370EF5700025268 /* ChangeCityInterfaceController.swift in Sources */,
 				D4CF275A236E9A2500698141 /* ExtensionDelegate.swift in Sources */,
 				D4CF2758236E9A2500698141 /* InterfaceController.swift in Sources */,
 			);
