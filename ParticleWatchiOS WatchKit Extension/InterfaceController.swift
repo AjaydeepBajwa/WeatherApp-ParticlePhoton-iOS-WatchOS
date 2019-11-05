@@ -79,6 +79,9 @@ class InterfaceController: WKInterfaceController {
             let humidity = jsonResponse["main"]["humidity"].float
             let precipitation = jsonResponse["main"]["humidity"].float
             let country = jsonResponse["sys"]["country"].string
+            let currentTime = jsonResponse["dt"].float
+            
+            let date = NSDate(timeIntervalSince1970: TimeInterval(currentTime!))
             
             self.lblTemperature.setText("\(tempCelcius) °C")
             self.lblPrecipitation.setText("\(precipitation!) %")
@@ -89,6 +92,7 @@ class InterfaceController: WKInterfaceController {
             print("Pressure: \(pressure!)")
             print("Humidity: \(humidity!)")
             print("Country: \(country!)")
+            print("Current Date: \(date)")
             
             self.getForecast()
         }
