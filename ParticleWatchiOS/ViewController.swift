@@ -8,8 +8,51 @@
 
 import UIKit
 import Particle_SDK
+import WatchConnectivity
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,WCSessionDelegate {
+    var dateTime:Float!
+    var temp:Float!
+    var tempTom:Float!
+    var precip:Float!
+    
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        
+    }
+    
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+        
+    }
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
+        DispatchQueue.main.async {
+            if (message.keys.contains("temp")){
+                print("Weather data recieved from Watch")
+                
+                self.dateTime = message["time"] as! Float
+                self.temp = message["temp"] as! Float
+                self.tempTom = message["tempTomorrow"] as! Float
+                self.precip = message["precip"] as! Float
+                
+                
+            }
+        }
+
+    }
+    
+//    func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
+//
+//        DispatchQueue.main.async {
+//            if (message.keys.contains("temp")){
+//                print("Weather data recieved from Watch")
+//
+//            }
+//        }
+//    }
+    
     
     // MARK: User variables
     let USERNAME = "letv5050@gmail.com"
@@ -21,6 +64,20 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        DispatchQueue.main.async {
+            // 1. Check if phone supports WCSessions
+            print("Phone view loaded")
+            if WCSession.isSupported() {
+                print("Phone supports WCSession")
+                WCSession.default.delegate = self
+                WCSession.default.activate()
+                print("Session Activated")
+            }
+            else {
+                print("Phone does not support WCSession")
+            }
+        }
         
         // 1. Initialize the SDK
         ParticleCloud.init()

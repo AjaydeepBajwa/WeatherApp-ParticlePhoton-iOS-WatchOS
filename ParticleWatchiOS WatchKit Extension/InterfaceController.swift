@@ -10,10 +10,16 @@ import WatchKit
 import Foundation
 import Alamofire
 import SwiftyJSON
+import WatchConnectivity
 
 
-class InterfaceController: WKInterfaceController {
-
+class InterfaceController: WKInterfaceController,WCSessionDelegate {
+    
+    
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        
+    }
+    
     @IBOutlet weak var lblCityName: WKInterfaceLabel!
     
     @IBOutlet weak var lblTime: WKInterfaceLabel!
@@ -22,11 +28,24 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet weak var lblPrecipitation: WKInterfaceLabel!
     var lat:String!
     var lng:String!
+    var dateTime:Float!
+    var tempToday:Float!
+    var tempTomorrow:Float!
+    var precip:Float!
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
         // Configure interface objects here.
+        if WCSession.isSupported() {
+            print("Watch supports WCSession")
+            WCSession.default.delegate = self
+            WCSession.default.activate()
+            print("Session Activated")
+        }
+        else {
+            print("Watch does not support WCSession")
+        }
     }
     
     override func willActivate() {
@@ -102,6 +121,10 @@ class InterfaceController: WKInterfaceController {
             // Set the current date, altered by timezone.
             let dateString = format.string(from: date as Date)
             
+            self.dateTime = currentTime!
+            self.tempToday = tempCelcius
+            self.precip = precipitation!
+            
             self.lblTemperature.setText("\(tempCelcius) °C")
             self.lblPrecipitation.setText("\(precipitation!) %")
             self.lblTime.setText("\(dateString)")
@@ -137,6 +160,7 @@ class InterfaceController: WKInterfaceController {
             let tomorrowTempCelcius = tomorrowTemp! - 273.15
             
             self.lblTomTemperature.setText("\(tomorrowTempCelcius) °C")
+            self.tempTomorrow = tomorrowTempCelcius
             
             
             print("Tomorrow Weather description : \(tomorrowDescription!)")
@@ -145,6 +169,16 @@ class InterfaceController: WKInterfaceController {
     }
 
     @IBAction func btnShowOnParticle() {
+        if (WCSession.default.isReachable) {
+                print("phone reachable")
+            let message = ["time": self.dateTime,"temp":self.tempToday,"tempTomorrow":self.tempTomorrow,"precip":precip]
+            WCSession.default.sendMessage(message as [String : Any], replyHandler: nil)
+                // output a debug message to the console
+                print("sent weather data request to phone")
+            }
+            else {
+                    print("WATCH: Cannot reach phone")
+                }
     }
     @IBAction func btnChangeCity() {
     }
