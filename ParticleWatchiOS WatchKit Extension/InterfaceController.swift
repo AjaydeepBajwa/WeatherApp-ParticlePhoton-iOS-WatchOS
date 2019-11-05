@@ -69,7 +69,7 @@ class InterfaceController: WKInterfaceController {
                 print("Error getting response from url")
                 return
             }
-            print(apiData)
+            //print(apiData)
             
             let jsonResponse = JSON(apiData)
             let weatherDescription = jsonResponse["weather"].array![0]["description"].string
@@ -83,6 +83,17 @@ class InterfaceController: WKInterfaceController {
             
             let date = NSDate(timeIntervalSince1970: TimeInterval(currentTime!))
             
+            let format = DateFormatter()
+            
+            // Set the current timezone to .current
+            format.timeZone = .current
+            
+            // Set the format of the altered date.
+            format.dateFormat = "yyyy-MM-dd' 'HH:mm:ssZ"
+            
+            // Set the current date, altered by timezone.
+            let dateString = format.string(from: date as Date)
+            
             self.lblTemperature.setText("\(tempCelcius) °C")
             self.lblPrecipitation.setText("\(precipitation!) %")
             
@@ -92,7 +103,7 @@ class InterfaceController: WKInterfaceController {
             print("Pressure: \(pressure!)")
             print("Humidity: \(humidity!)")
             print("Country: \(country!)")
-            print("Current Date: \(date)")
+            print("Current Date: \(dateString)")
             
             self.getForecast()
         }
@@ -115,7 +126,7 @@ class InterfaceController: WKInterfaceController {
                 print("Error getting response from url")
                 return
             }
-            print(apiData)
+            //print(apiData)
             
             let jsonResponse = JSON(apiData)
             
