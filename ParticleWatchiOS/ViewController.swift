@@ -46,9 +46,7 @@ class ViewController: UIViewController,WCSessionDelegate {
                 // Set the current timezone to .current
                 hourFormat.timeZone = .current
                 minuteFormat.timeZone = .current
-                // Set the format of the altered date.
-                //            format.dateFormat = "yyyy-MM-dd' 'HH:mm:ssZ"
-                // use MMMM for month String
+            
 //                format.dateFormat = "h:mm a '' dd-MM-yyyy"
                 hourFormat.dateFormat = "h"
                 minuteFormat.dateFormat = "mm"
@@ -60,7 +58,7 @@ class ViewController: UIViewController,WCSessionDelegate {
                 print("Hour: \(self.hour!)")
                 print("Minute:\(self.minute!)")
                 
-                
+                self.sendHourToParticle()
             }
         }
 
@@ -149,14 +147,14 @@ class ViewController: UIViewController,WCSessionDelegate {
         
     }
     
-    func sendDataToParticle(){
-        let funcArgs = ["lights on"] as [Any]
-        let task = self.myPhoton!.callFunction("lightsOnOff", withArguments: funcArgs) { (resultCode : NSNumber?, error : Error?) -> Void in
+    func sendHourToParticle(){
+        let funcArgs = [self.hour!] as [Any]
+        let task = self.myPhoton!.callFunction("setHour", withArguments: funcArgs) { (resultCode : NSNumber?, error : Error?) -> Void in
             if (error == nil) {
-                print("LEDs successfully turned on")
+                print("sent hour to particle")
             }
             else{
-                print("Error turning on lights")
+                print("Error sending hour")
             }
         }
         var bytesToReceive : Int64 = task.countOfBytesExpectedToReceive
@@ -164,6 +162,7 @@ class ViewController: UIViewController,WCSessionDelegate {
         
     }
     
+    //,self.minute!,self.temp!,self.tempTom!,self.precip!
     @IBAction func btnLightsOn(_ sender: Any) {
         self.turnOnLights()
     }
