@@ -15,6 +15,8 @@ class ViewController: UIViewController,WCSessionDelegate {
     var temp:Float!
     var tempTom:Float!
     var precip:Float!
+    var hour:String!
+    var minute:String!
     
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
         
@@ -38,20 +40,31 @@ class ViewController: UIViewController,WCSessionDelegate {
                 self.precip = message["precip"] as! Float
                 
                 
+                let date = NSDate(timeIntervalSince1970: TimeInterval(self.dateTime!))
+                let hourFormat = DateFormatter()
+                let minuteFormat = DateFormatter()
+                // Set the current timezone to .current
+                hourFormat.timeZone = .current
+                minuteFormat.timeZone = .current
+                // Set the format of the altered date.
+                //            format.dateFormat = "yyyy-MM-dd' 'HH:mm:ssZ"
+                // use MMMM for month String
+//                format.dateFormat = "h:mm a '' dd-MM-yyyy"
+                hourFormat.dateFormat = "h"
+                minuteFormat.dateFormat = "mm"
+                
+                // Set the current date, altered by timezone.
+                let hourString = hourFormat.string(from: date as Date)
+                self.hour = hourFormat.string(from: date as Date)
+                self.minute = minuteFormat.string(from: date as Date)
+                print("Hour: \(self.hour!)")
+                print("Minute:\(self.minute!)")
+                
+                
             }
         }
 
     }
-    
-//    func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
-//
-//        DispatchQueue.main.async {
-//            if (message.keys.contains("temp")){
-//                print("Weather data recieved from Watch")
-//
-//            }
-//        }
-//    }
     
     
     // MARK: User variables
@@ -122,6 +135,21 @@ class ViewController: UIViewController,WCSessionDelegate {
     }
     
     func turnOnLights(){
+        let funcArgs = ["lights on"] as [Any]
+        let task = self.myPhoton!.callFunction("lightsOnOff", withArguments: funcArgs) { (resultCode : NSNumber?, error : Error?) -> Void in
+            if (error == nil) {
+                print("LEDs successfully turned on")
+            }
+            else{
+                print("Error turning on lights")
+            }
+        }
+        var bytesToReceive : Int64 = task.countOfBytesExpectedToReceive
+        print("\(bytesToReceive)")
+        
+    }
+    
+    func sendDataToParticle(){
         let funcArgs = ["lights on"] as [Any]
         let task = self.myPhoton!.callFunction("lightsOnOff", withArguments: funcArgs) { (resultCode : NSNumber?, error : Error?) -> Void in
             if (error == nil) {
