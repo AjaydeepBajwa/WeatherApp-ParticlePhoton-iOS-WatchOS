@@ -15,11 +15,18 @@
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="ParticleWatchiOS_WatchKit_App" customModuleProvider="target">
                     <items>
                         <label width="1" alignment="center" text="Label" textAlignment="center" id="jSY-Cg-Foe"/>
-                        <label width="1" alignment="center" text="time" textAlignment="center" id="ke9-j2-EV0"/>
+                        <label width="1" alignment="center" text="time" textAlignment="center" id="ke9-j2-EV0">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                        </label>
                         <label width="1" alignment="center" text="Temperature" textAlignment="center" id="kpN-43-a54"/>
                         <label width="1" alignment="center" text="TomTemperature" textAlignment="center" id="1Kh-Hr-AEs"/>
                         <label width="1" alignment="center" text="precipitation" textAlignment="center" id="ehf-Bn-Kwg"/>
-                        <button width="1" alignment="left" title="Button" id="qO0-SG-Jmh">
+                        <button width="1" alignment="left" title="Show On Particle" id="vC4-C6-FJT">
+                            <connections>
+                                <action selector="btnShowOnParticle" destination="AgC-eL-Hgc" id="b5E-4b-Fio"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Change City" id="qO0-SG-Jmh">
                             <connections>
                                 <action selector="btnChangeCity" destination="AgC-eL-Hgc" id="KCR-4T-Ndk"/>
                                 <segue destination="i2k-uV-aOi" kind="push" id="f2F-sd-wb8"/>

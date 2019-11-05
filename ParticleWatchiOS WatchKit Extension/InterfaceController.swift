@@ -60,7 +60,17 @@ class InterfaceController: WKInterfaceController {
         print(self.lat!)
         print(self.lng!)
         
-        //let URL = "https://api.sunrise-sunset.org/json?lat=\(lat!)&lng=\(lng!)&date=today"
+        self.getCurrentWeather()
+        self.getForecast()
+    }
+    
+    override func didDeactivate() {
+        // This method is called when watch view controller is no longer visible
+        super.didDeactivate()
+    }
+    
+    public func getCurrentWeather(){
+        
         let URL = "https://api.openweathermap.org/data/2.5/weather?lat=\(self.lat!)&lon=\(self.lng!)&appid=8eb59ef603c67740b0e5b7b8725d2ff3"
         
         Alamofire.request(URL).responseJSON{
@@ -82,20 +92,19 @@ class InterfaceController: WKInterfaceController {
             let currentTime = jsonResponse["dt"].float
             
             let date = NSDate(timeIntervalSince1970: TimeInterval(currentTime!))
-            
             let format = DateFormatter()
-            
             // Set the current timezone to .current
             format.timeZone = .current
-            
             // Set the format of the altered date.
-            format.dateFormat = "yyyy-MM-dd' 'HH:mm:ssZ"
-            
+            //            format.dateFormat = "yyyy-MM-dd' 'HH:mm:ssZ"
+            // use MMMM for month String
+            format.dateFormat = "h:mm a '' dd-MM-yyyy"
             // Set the current date, altered by timezone.
             let dateString = format.string(from: date as Date)
             
             self.lblTemperature.setText("\(tempCelcius) °C")
             self.lblPrecipitation.setText("\(precipitation!) %")
+            self.lblTime.setText("\(dateString)")
             
             print("Weather description : \(weatherDescription!)")
             print("Temperature : \(temperature!)")
@@ -104,14 +113,7 @@ class InterfaceController: WKInterfaceController {
             print("Humidity: \(humidity!)")
             print("Country: \(country!)")
             print("Current Date: \(dateString)")
-            
-            self.getForecast()
         }
-    }
-    
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
     }
     
     public func getForecast(){
@@ -142,6 +144,8 @@ class InterfaceController: WKInterfaceController {
         }
     }
 
+    @IBAction func btnShowOnParticle() {
+    }
     @IBAction func btnChangeCity() {
     }
 }
