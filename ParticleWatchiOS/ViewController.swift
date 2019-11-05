@@ -136,20 +136,6 @@ class ViewController: UIViewController,WCSessionDelegate {
         }
     }
     
-    func turnOnLights(){
-        let funcArgs = ["lights on"] as [Any]
-        let task = self.myPhoton!.callFunction("lightsOnOff", withArguments: funcArgs) { (resultCode : NSNumber?, error : Error?) -> Void in
-            if (error == nil) {
-                print("LEDs successfully turned on")
-            }
-            else{
-                print("Error turning on lights")
-            }
-        }
-        //var bytesToReceive : Int64 = task.countOfBytesExpectedToReceive
-        //print("\(bytesToReceive)")
-        
-    }
     
     func sendHourToParticle(){
         let funcArgs = [self.hour!] as [Any]
@@ -216,10 +202,6 @@ class ViewController: UIViewController,WCSessionDelegate {
             }
         }
         
-    }
-    //,self.minute!,self.temp!,self.tempTom!,self.precip!
-    @IBAction func btnLightsOn(_ sender: Any) {
-        self.turnOnLights()
     }
     
 }

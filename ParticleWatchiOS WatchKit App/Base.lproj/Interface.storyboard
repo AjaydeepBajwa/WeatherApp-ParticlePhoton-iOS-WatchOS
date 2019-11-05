@@ -18,9 +18,9 @@
                         <label width="1" alignment="center" text="time" textAlignment="center" id="ke9-j2-EV0">
                             <fontDescription key="font" type="system" pointSize="12"/>
                         </label>
-                        <label width="1" alignment="center" text="Temperature" textAlignment="center" id="kpN-43-a54"/>
-                        <label width="1" alignment="center" text="TomTemperature" textAlignment="center" id="1Kh-Hr-AEs"/>
-                        <label width="1" alignment="center" text="precipitation" textAlignment="center" id="ehf-Bn-Kwg"/>
+                        <label width="1" alignment="center" text="Temperature" textAlignment="center" numberOfLines="3" id="kpN-43-a54"/>
+                        <label width="1" alignment="center" text="TomTemperature" textAlignment="center" numberOfLines="3" id="1Kh-Hr-AEs"/>
+                        <label width="1" alignment="center" text="precipitation" textAlignment="center" numberOfLines="3" id="ehf-Bn-Kwg"/>
                         <button width="1" alignment="left" title="Show On Particle" id="vC4-C6-FJT">
                             <connections>
                                 <action selector="btnShowOnParticle" destination="AgC-eL-Hgc" id="b5E-4b-Fio"/>

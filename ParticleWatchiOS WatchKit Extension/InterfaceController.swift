@@ -78,9 +78,19 @@ class InterfaceController: WKInterfaceController,WCSessionDelegate {
         }
         print(self.lat!)
         print(self.lng!)
-        
+
         self.getCurrentWeather()
         self.getForecast()
+        self.sendDataToPhone()
+        self.callback()
+    }
+    func callback() {
+//        self.getCurrentWeather()
+//        self.getForecast()
+        self.sendDataToPhone()
+         DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
+            self.callback()
+        }
     }
     
     override func didDeactivate() {
@@ -89,6 +99,10 @@ class InterfaceController: WKInterfaceController,WCSessionDelegate {
     }
     
     public func getCurrentWeather(){
+        
+        self.lblTime.setText("...")
+        self.lblTemperature.setText("...")
+        self.lblPrecipitation.setText("...")
         
         let URL = "https://api.openweathermap.org/data/2.5/weather?lat=\(self.lat!)&lon=\(self.lng!)&appid=8eb59ef603c67740b0e5b7b8725d2ff3"
         
@@ -113,7 +127,7 @@ class InterfaceController: WKInterfaceController,WCSessionDelegate {
             let date = NSDate(timeIntervalSince1970: TimeInterval(currentTime!))
             let format = DateFormatter()
             // Set the current timezone to .current
-            format.timeZone = .current
+            //format.timeZone = .current
             // Set the format of the altered date.
             //            format.dateFormat = "yyyy-MM-dd' 'HH:mm:ssZ"
             // use MMMM for month String
@@ -125,8 +139,8 @@ class InterfaceController: WKInterfaceController,WCSessionDelegate {
             self.tempToday = tempCelcius
             self.precip = precipitation!
             
-            self.lblTemperature.setText("\(tempCelcius) °C")
-            self.lblPrecipitation.setText("\(precipitation!) %")
+            self.lblTemperature.setText("Temperature: \(tempCelcius) °C")
+            self.lblPrecipitation.setText("Precipitation: \(precipitation!) %")
             self.lblTime.setText("\(dateString)")
             
             print("Weather description : \(weatherDescription!)")
@@ -135,13 +149,14 @@ class InterfaceController: WKInterfaceController,WCSessionDelegate {
             print("Pressure: \(pressure!)")
             print("Humidity: \(humidity!)")
             print("Country: \(country!)")
-            print("Current Date: \(dateString)")
+            print("Current Date: \(date)")
         }
     }
     
     public func getForecast(){
         //api.openweathermap.org/data/2.5/forecast?lat=35&lon=139
         
+        self.lblTomTemperature.setText("...")
         //URL to get weather forecast
         let URL = "https://api.openweathermap.org/data/2.5/forecast?lat=\(self.lat!)&lon=\(self.lng!)&appid=8eb59ef603c67740b0e5b7b8725d2ff3"
         
@@ -159,7 +174,7 @@ class InterfaceController: WKInterfaceController,WCSessionDelegate {
             let tomorrowTemp = jsonResponse["list"].array![0]["main"]["temp"].float
             let tomorrowTempCelcius = tomorrowTemp! - 273.15
             
-            self.lblTomTemperature.setText("\(tomorrowTempCelcius) °C")
+            self.lblTomTemperature.setText("Tomorrow's Temperature: \(tomorrowTempCelcius) °C")
             self.tempTomorrow = tomorrowTempCelcius
             
             
@@ -169,17 +184,21 @@ class InterfaceController: WKInterfaceController,WCSessionDelegate {
     }
 
     @IBAction func btnShowOnParticle() {
+        sendDataToPhone()
+    }
+    public func sendDataToPhone(){
         if (WCSession.default.isReachable) {
-                print("phone reachable")
+            print("phone reachable")
             let message = ["time": self.dateTime,"temp":self.tempToday,"tempTomorrow":self.tempTomorrow,"precip":precip]
             WCSession.default.sendMessage(message as [String : Any], replyHandler: nil)
-                // output a debug message to the console
-                print("sent weather data request to phone")
-            }
-            else {
-                    print("WATCH: Cannot reach phone")
-                }
+            // output a debug message to the console
+            print("sent weather data request to phone")
+        }
+        else {
+            print("WATCH: Cannot reach phone")
+        }
     }
+    
     @IBAction func btnChangeCity() {
     }
 }
