@@ -1,9 +1,9 @@
 //
 //  ChangeCityInterfaceController.swift
-//  APIDemo WatchKit Extension
+//  ParticleWatchiOS WatchKit Extension
 //
-//  Created by AJAY BAJWA on 2019-10-30.
-//  Copyright © 2019 Parrot. All rights reserved.
+//  Created by AJAY BAJWA on 2019-11-03.
+//  Copyright © 2019 lambton. All rights reserved.
 //
 
 import WatchKit

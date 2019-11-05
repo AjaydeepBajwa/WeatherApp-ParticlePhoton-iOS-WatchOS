@@ -14,6 +14,11 @@ import SwiftyJSON
 
 class InterfaceController: WKInterfaceController {
 
+    @IBOutlet weak var lblCityName: WKInterfaceLabel!
+    
+    var lat:String!
+    var lng:String!
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
@@ -24,8 +29,35 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
         
+        let userDefaults = UserDefaults.standard
+        var city = userDefaults.string(forKey: "city")
+        
+        if (city == nil) {
+            
+            city = "Toronto"
+            print("Set default city Toronto, as no city was selected")
+        }
+        else {
+            print("Got city: \(city)")
+        }
+        
+        // update the label to show the current city
+        self.lblCityName.setText(city!)
+        
+        //lat long
+        self.lat = userDefaults.string(forKey: "latitude")
+        self.lng = userDefaults.string(forKey: "longitude")
+        
+        if (self.lat == nil || self.lng == nil) {
+            // set lat long to toronto's lat long if they are nil.
+            self.lat = "43.653963"
+            self.lng = "-79.387207"
+        }
+        print(self.lat!)
+        print(self.lng!)
+        
         //let URL = "https://api.sunrise-sunset.org/json?lat=\(lat!)&lng=\(lng!)&date=today"
-        let URL = "https://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=8eb59ef603c67740b0e5b7b8725d2ff3"
+        let URL = "https://api.openweathermap.org/data/2.5/weather?lat=\(self.lat!)&lon=\(self.lng!)&appid=8eb59ef603c67740b0e5b7b8725d2ff3"
         
         Alamofire.request(URL).responseJSON{
             response in

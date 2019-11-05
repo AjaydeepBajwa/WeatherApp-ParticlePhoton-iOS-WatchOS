@@ -14,6 +14,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="ParticleWatchiOS_WatchKit_App" customModuleProvider="target">
                     <items>
+                        <label width="1" alignment="center" text="Label" textAlignment="center" id="jSY-Cg-Foe"/>
                         <button width="1" alignment="left" title="Button" id="qO0-SG-Jmh">
                             <connections>
                                 <action selector="btnChangeCity" destination="AgC-eL-Hgc" id="KCR-4T-Ndk"/>
@@ -21,6 +22,9 @@
                             </connections>
                         </button>
                     </items>
+                    <connections>
+                        <outlet property="lblCityName" destination="jSY-Cg-Foe" id="pPv-df-w5l"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="134" y="163"/>
