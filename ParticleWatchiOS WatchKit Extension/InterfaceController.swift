@@ -16,6 +16,10 @@ class InterfaceController: WKInterfaceController {
 
     @IBOutlet weak var lblCityName: WKInterfaceLabel!
     
+    @IBOutlet weak var lblTime: WKInterfaceLabel!
+    @IBOutlet weak var lblTemperature: WKInterfaceLabel!
+    @IBOutlet weak var lblTomTemperature: WKInterfaceLabel!
+    @IBOutlet weak var lblPrecipitation: WKInterfaceLabel!
     var lat:String!
     var lng:String!
     
@@ -70,21 +74,57 @@ class InterfaceController: WKInterfaceController {
             let jsonResponse = JSON(apiData)
             let weatherDescription = jsonResponse["weather"].array![0]["description"].string
             let temperature = jsonResponse["main"]["temp"].float
+            let tempCelcius = temperature! - 273.15
             let pressure = jsonResponse["main"]["pressure"].float
             let humidity = jsonResponse["main"]["humidity"].float
+            let precipitation = jsonResponse["main"]["humidity"].float
             let country = jsonResponse["sys"]["country"].string
+            
+            self.lblTemperature.setText("\(tempCelcius) °C")
+            self.lblPrecipitation.setText("\(precipitation!) %")
             
             print("Weather description : \(weatherDescription!)")
             print("Temperature : \(temperature!)")
+            print("Temperature :\(tempCelcius) °C")
             print("Pressure: \(pressure!)")
             print("Humidity: \(humidity!)")
             print("Country: \(country!)")
+            
+            self.getForecast()
         }
     }
     
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
+    }
+    
+    public func getForecast(){
+        //api.openweathermap.org/data/2.5/forecast?lat=35&lon=139
+        
+        //URL to get weather forecast
+        let URL = "https://api.openweathermap.org/data/2.5/forecast?lat=\(self.lat!)&lon=\(self.lng!)&appid=8eb59ef603c67740b0e5b7b8725d2ff3"
+        
+        Alamofire.request(URL).responseJSON{
+            response in
+            guard let apiData = response.result.value else{
+                print("Error getting response from url")
+                return
+            }
+            print(apiData)
+            
+            let jsonResponse = JSON(apiData)
+            
+            let tomorrowDescription = jsonResponse["list"].array![0]["weather"].array![0]["description"].string
+            let tomorrowTemp = jsonResponse["list"].array![0]["main"]["temp"].float
+            let tomorrowTempCelcius = tomorrowTemp! - 273.15
+            
+            self.lblTomTemperature.setText("\(tomorrowTempCelcius) °C")
+            
+            
+            print("Tomorrow Weather description : \(tomorrowDescription!)")
+            print("Tomorrow Temperature : \(tomorrowTempCelcius) °C")
+        }
     }
 
     @IBAction func btnChangeCity() {

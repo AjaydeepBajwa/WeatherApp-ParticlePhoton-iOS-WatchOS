@@ -15,6 +15,10 @@
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="ParticleWatchiOS_WatchKit_App" customModuleProvider="target">
                     <items>
                         <label width="1" alignment="center" text="Label" textAlignment="center" id="jSY-Cg-Foe"/>
+                        <label width="1" alignment="center" text="time" textAlignment="center" id="ke9-j2-EV0"/>
+                        <label width="1" alignment="center" text="Temperature" textAlignment="center" id="kpN-43-a54"/>
+                        <label width="1" alignment="center" text="TomTemperature" textAlignment="center" id="1Kh-Hr-AEs"/>
+                        <label width="1" alignment="center" text="precipitation" textAlignment="center" id="ehf-Bn-Kwg"/>
                         <button width="1" alignment="left" title="Button" id="qO0-SG-Jmh">
                             <connections>
                                 <action selector="btnChangeCity" destination="AgC-eL-Hgc" id="KCR-4T-Ndk"/>
@@ -24,6 +28,10 @@
                     </items>
                     <connections>
                         <outlet property="lblCityName" destination="jSY-Cg-Foe" id="pPv-df-w5l"/>
+                        <outlet property="lblPrecipitation" destination="ehf-Bn-Kwg" id="Tnu-ep-jE0"/>
+                        <outlet property="lblTemperature" destination="kpN-43-a54" id="Gz5-2J-8ZM"/>
+                        <outlet property="lblTime" destination="ke9-j2-EV0" id="9LL-qW-MRG"/>
+                        <outlet property="lblTomTemperature" destination="1Kh-Hr-AEs" id="VeR-Uv-sV9"/>
                     </connections>
                 </controller>
             </objects>
