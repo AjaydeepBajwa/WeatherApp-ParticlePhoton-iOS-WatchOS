@@ -59,6 +59,10 @@ class ViewController: UIViewController,WCSessionDelegate {
                 print("Minute:\(self.minute!)")
                 
                 self.sendHourToParticle()
+                self.sendMinuteToParticle()
+                self.sendTempToParticle()
+                self.sendTempTomToParticle()
+                self.sendPrecipToParticle()
             }
         }
 
@@ -142,8 +146,8 @@ class ViewController: UIViewController,WCSessionDelegate {
                 print("Error turning on lights")
             }
         }
-        var bytesToReceive : Int64 = task.countOfBytesExpectedToReceive
-        print("\(bytesToReceive)")
+        //var bytesToReceive : Int64 = task.countOfBytesExpectedToReceive
+        //print("\(bytesToReceive)")
         
     }
     
@@ -157,11 +161,62 @@ class ViewController: UIViewController,WCSessionDelegate {
                 print("Error sending hour")
             }
         }
-        var bytesToReceive : Int64 = task.countOfBytesExpectedToReceive
-        print("\(bytesToReceive)")
+        //var bytesToReceive : Int64 = task.countOfBytesExpectedToReceive
+        //print("\(bytesToReceive)")
         
     }
     
+    func sendMinuteToParticle(){
+        let funcArgs = [self.minute!] as [Any]
+        let task = self.myPhoton!.callFunction("setMinute", withArguments: funcArgs) { (resultCode : NSNumber?, error : Error?) -> Void in
+            if (error == nil) {
+                print("sent minute to particle")
+            }
+            else{
+                print("Error sending minute")
+            }
+        }
+        
+    }
+    
+    func sendTempToParticle(){
+        let funcArgs = [self.temp!] as [Any]
+        let task = self.myPhoton!.callFunction("setTemp", withArguments: funcArgs) { (resultCode : NSNumber?, error : Error?) -> Void in
+            if (error == nil) {
+                print("sent temp to particle")
+            }
+            else{
+                print("Error sending temp")
+            }
+        }
+        
+    }
+
+    func sendTempTomToParticle(){
+        let funcArgs = [self.tempTom!] as [Any]
+        let task = self.myPhoton!.callFunction("setTempTom", withArguments: funcArgs) { (resultCode : NSNumber?, error : Error?) -> Void in
+            if (error == nil) {
+                print("sent tempTom to particle")
+            }
+            else{
+                print("Error sending tempTom")
+            }
+        }
+        
+    }
+    
+    func sendPrecipToParticle(){
+        let funcArgs = [self.precip!] as [Any]
+        let task = self.myPhoton!.callFunction("setPrecip", withArguments: funcArgs) { (resultCode : NSNumber?, error : Error?) -> Void in
+            if (error == nil) {
+                print("sent precip to particle")
+            }
+            else{
+                print("Error sending precip")
+            }
+        }
+        
+    }
     //,self.minute!,self.temp!,self.tempTom!,self.precip!
     @IBAction func btnLightsOn(_ sender: Any) {
         self.turnOnLights()
