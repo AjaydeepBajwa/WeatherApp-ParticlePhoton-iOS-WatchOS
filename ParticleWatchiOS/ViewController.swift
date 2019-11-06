@@ -70,11 +70,11 @@ class ViewController: UIViewController,WCSessionDelegate {
     
     
     // MARK: User variables
-    let USERNAME = "letv5050@gmail.com"
-    let PASSWORD = "passion100"
+    let USERNAME = ""
+    let PASSWORD = ""
     
     // MARK: Device
-    let DEVICE_ID = "38002a000247363333343435"
+    let DEVICE_ID = ""
     var myPhoton : ParticleDevice?
     
     override func viewDidLoad() {
